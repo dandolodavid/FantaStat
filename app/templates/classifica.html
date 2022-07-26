@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{nome}}Classifica serie A</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/classifica_page.css') }}">
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar_menu"> 
+            <h3>FantaStat</h3>
+            <ul>
+                <li class = 'sidebar-item'><a href="/classifica">Info squadre</a></li>
+                <li class = 'sidebar-item'><a href="/role-explorer">Info ruolo</a></li>
+                <li class = 'sidebar-item'><a href="/player-page">Info giocatore</a></li>
+                <li class = 'sidebar-item'><a href="#">La tua squadra</a></li>
+            </ul>
+    </header>    
+
+    <div class = 'main_content'>
+        <table class="sortable tabella table">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        {% for col_name in table.columns[:-1]%}
+                        <th> {{col_name}}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+
+                
+            <tbody aria-live = 'polite' aria-relevant = 'all'>
+                
+                {% for idx,row in table.iterrows() %}
+
+                <tr class = 'row_classifica'>
+                    
+                    <th>
+                        <div class = 'logo'><img src={{row[-1]}} alt="logo fantacalcio.it"></div>
+                    </th>
+                    
+                    {% for col in row[:-1]%}
+                        <th>{{col}}</th>
+                    {% endfor %}
+
+                </tr>   
+                {% endfor %}
+            </tbody>
+
+        </table>
+    <div>
+
+</body>
+</html>    

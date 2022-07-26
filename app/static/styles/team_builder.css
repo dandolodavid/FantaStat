@@ -1,0 +1,151 @@
+header {
+    padding:5px;
+}
+
+.player_selection {
+  border-radius: 12px;
+  background-color: #7c62ed;
+  padding: 10px;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Helvetica";
+}
+
+.navbar_menu{
+    background-color: #c8d8e4;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.sidebar-item {
+    font-size:15;
+    padding:10px;
+    display: inline;
+}
+
+.sidebar-item a:hover {
+  background-color: rgb(236, 12, 12);
+}
+
+.main_content{
+    position : center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left : 30px;
+    padding-right : 30px;
+    width:auto;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: -10px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 100;
+    min-height: 80vh;
+    max-width: calc(100vw - 50vw);
+    min-width: 300px;
+}
+
+.section_title{
+    padding:10px;
+    border-radius: 12px;
+    background-color: #c8d8e4;
+}
+
+.campetto{
+    background-image: url('https://mh-1-agenzia-di-stock.panthermedia.net/media/media_detail/0011000000/11650000/~verde-campo-di-calcio--_11650734_detail.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 66.64%;
+
+}
+
+
+.dif_3{
+    grid-template-columns: auto auto auto;
+    display: grid;
+}
+.dif_4{
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+}
+.dif_5{
+    grid-template-columns: auto auto auto auto auto;
+    display: grid;
+}
+
+
+.cen_3{
+    grid-template-columns: auto auto auto;
+    display: grid;
+}
+.cen_4{
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+}
+.cen_5{
+    grid-template-columns: auto auto auto auto auto;
+    display: grid;
+}
+
+
+.att_2{
+    grid-template-columns: auto auto;
+    display: grid;
+}
+.att_3{
+    grid-template-columns: auto auto auto;
+    display: grid;
+}
+.att_1{
+    grid-template-columns: auto;
+    display: grid;
+}
+
+
+.grid_item_por {
+    border: 2px solid;
+    border-radius: 12px;
+    border-color:#f4b247 ;
+    padding: 5px;
+    font-size: 16;
+    text-align: center;
+  }
+
+.grid_item_dif {
+    border: 2px solid;
+    border-radius: 12px;
+    border-color:#daf209 ;
+    padding: 5px;
+    font-size: 16;
+    text-align: center;
+  }
+
+.grid_item_cen {
+    border: 2px solid;
+    border-radius: 12px;
+    border-color:#291fee ;
+    padding: 5px;
+    font-size: 16;
+    text-align: center;
+  }
+
+.grid_item_att {
+    border: 2px solid;
+    border-radius: 12px;
+    border-color:#ee0a0a ;
+    padding: 5px;
+    font-size: 16;
+    text-align: center;
+  }
+
+.grid_item_sent{
+    padding: 15px;
+    text-align: center;
+}

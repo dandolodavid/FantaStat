@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{nome}} Confronta giocatori ruoli</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/role_explorer.css') }}">
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar_menu"> 
+            <h3>FantaStat</h3>
+            <ul>
+                <li class = 'sidebar-item'><a href="/classifica">Info squadre</a></li>
+                <li class = 'sidebar-item'><a href="/role-explorer">Info ruolo</a></li>
+                <li class = 'sidebar-item'><a href="/player-page">Info giocatore</a></li>
+                <li class = 'sidebar-item'><a href="#">La tua squadra</a></li>
+            </ul>
+    </header>    
+    
+    <div class = "filter_selection">
+        <div class='grid_item'>
+            Seleziona ruolo:
+            <form action= "{{ url_for('handle_filter') }}" method="POST">
+                <select name ='role_selected'>
+                    {% for role in ['P','D','C','A'] %}
+                        <option value= "{{role}}">{{role}}</option>"
+                    {% endfor %}
+                </select>
+            </div>
+        <div class='grid_item'>
+            Seleziona minimo presenze<br>
+                <select name ='min_pres'>
+                    {% for min_pres in [0,5,10,20,25,30] %}
+                    <option value= "{{min_pres}}">{{min_pres}}</option>"
+                    {% endfor %}
+                </select>
+        
+        </div>
+        <div class='grid_item'> <button type="submit" class="btn btn-default">Seleziona</button></div>   
+
+        </form>
+         
+    </div>
+
+    <div class='main_content'>
+        <table class="sortable tabella tableFixHead">
+            <thead class = 'table_header'>
+                <tr>
+                    <th></th>
+                    {% for col_name in table.columns[1:]%}
+                    <th> {{col_name.replace('_',' ')}}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+                
+            <tbody aria-live = 'polite' aria-relevant = 'all'>
+                {% for idx,row in table.iterrows() %}
+                    <tr class = 'row_role'>
+                    <th class='row_cell'><div class = 'logo-img'><img src={{row[0]}} alt="Campioncino Fantacalcio.it" width="70" height="80"></div></th>
+                    {% for col in row[1:]%}
+                        <th class='row_cell'>{{col}}</th>
+                    {% endfor %}
+                </tr>   
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                {% for col_name in table.columns%}
+                <th> </th>
+                {% endfor %}
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>    

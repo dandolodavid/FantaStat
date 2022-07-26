@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{nome}} Analisi giocatore</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/player_page_css.css') }}"></head>
+<body>    
+<header>
+        <div class="navbar_menu">
+            
+            <h3>FantaStat</h3>
+            <ul>
+                <li class = 'sidebar-item'><a href="/classifica">Info squadre</a></li>
+                <li class = 'sidebar-item'><a href="/role-explorer">Info ruolo</a></li>
+                <li class = 'sidebar-item'><a href="/player-page">Info giocatore</a></li>
+                <li class = 'sidebar-item'><a href="#">La tua squadra</a></li>
+            </ul>
+
+            <h3>Questa pagina:</h3>
+            <ul>
+                <li class = 'sidebar-item'><a href="#player_meta_grid">Riepilogo giocatore</a></li>
+                <li class = 'sidebar-item'><a href="#presenze_meta_grid">Presenze</a></li>
+                <li class = 'sidebar-item'><a href="#statistiche_meta_grid">Statistiche</a></li>
+                <li class = 'sidebar-item'><a href="#bonus_malus_meta_grid">Bonus/Malus</a></li>
+                <li class = 'sidebar-item'><a href="#div-history_plot">History plot</a></li>
+                <li class = 'sidebar-item'><a href="#div-bonus_plot">History plot</a></li>
+            </ul>
+
+        </div>
+
+        <div class = "player_selection">
+            Seleziona giocatore:
+            <form action= "{{ url_for('handle_name') }}" method="POST">
+                <select name ='nome_selezionato'>
+                    {% for name in names %}
+                    <option value= "{{name}}">{{name}}</option>"
+                    {% endfor %}
+                </select>
+            <button type="submit" class="btn btn-default">Vedi</button>
+            </form>
+                
+        </div>
+</header>
+
+    <div class = 'main_content'>
+
+        <div class="player_meta_grid" id="player_meta_grid">
+
+            <div class = 'player-figure'><img src={{img_src}} alt="Campioncino Fantacalcio.it" width="200" height="250"></div>  
+            <div class='grid_item'><h1>{{nome}}</h1>
+                <br>Squadra: <br><h2>{{team}}</h2>
+                <br>Ruolo Classic: <br><h2>{{ruolo_classic}} </h2>
+            </div>
+            <div class='grid_item'>Media Voto:<br> <h3> {{media_voto}} </h3></div>
+            <div class='grid_item'>Mediana Voto:<br> <h3> {{mediana_voto}}</div>
+            <div class='grid_item'>Media Fantavoto:<br> <h3> {{media_fantavoto}} </h3></div>
+            <div class='grid_item'>Mediana Fantavoto:<br> <h3>{{mediana_fantavoto}} </div>
+        </div>
+        
+        <h2 class='section_title'>Info presenze</h2>        
+        <div class="presenze_meta_grid" id="presenze_meta_grid">
+            <div class='grid_item'>Presenze: <br> <h3>{{presenze}} </h3></div>
+            <div class='grid_item'>Presenze con voto: <br> <h3>{{presenze_voto}} </h3></div>
+            <div class='grid_item'>% presenze con voto: <br> <h3> {{perc_match_voto}} </h3></div>
+            <div class='grid_item'></div>
+            <div class='grid_item'></div>
+            
+            <div class='grid_item'>Minuti giocati: <br> <h3>{{minuti_giocati}}</div>
+            <div class='grid_item'>Minuti a partita:<br> <h3>{{minuti_medi}}</div>
+            <div class='grid_item'></div>
+            <div class='grid_item'></div>
+            <div class='grid_item'></div>
+                
+
+            <div class='grid_item'>Titolare:<br> <h3> {{titolare}} </h3></div>
+            <div class='grid_item'>Entrato: <br> <h3> {{entrato}} </h3></div>
+            <div class='grid_item'>Sostituito:<br> <h3> {{sostituito}}</div>
+            <div class='grid_item'>% entrato:<br> <h3> {{perc_entrato}}</div>
+            <div class='grid_item'>% sostituito:<br> <h3> {{perc_sostituito}}</div>
+                
+
+            <div class='grid_item'>Infortunato:<br> <h3> {{infortunato}}</h3></div>
+            <div class='grid_item'>Inutilizzato:<br> <h3> {{inutilizzato}}</h3></div>
+        </div>
+
+        <h2 class='section_title'>Statistiche giocatore</h2>
+        <div class="statistiche_meta_grid" id="statistiche_meta_grid">    
+            <div class='grid_item'>Gol segnati:<br> <h3 font-size=30> {{gol_segnati}} </h3></div>
+            <div class='grid_item'>Assist: <br> <h3> {{assist}} </h3></div>
+            <div class='grid_item'>Gol segnati 90: <br> <h3> {{gol_segnati_90}} </h3></div>
+            <div class='grid_item'></div>
+            <div class='grid_item'></div>
+
+            <div class='grid_item'>xG: <br><h3> {{xG}} </h3></div>
+            <div class='grid_item'>xA: <br><h3> {{xA}} </h3></div>
+            <div class='grid_item'>xG90: <br><h3> {{xG90}} </h3></div>
+            <div class='grid_item'>xA90: <br><h3> {{xA90}} </h3></div>
+            <div class='grid_item'>Stato giocatore: <br><h3> {{status}} </h3></div>
+            
+            <div class='grid_item'>Rigori segnati: <br><h3>{{rigori_segnati}}</h3></div>
+            <div class='grid_item'>Rigori calciati: <br><h3>{{rigori_calciati}}</h3></div>
+
+        </div>
+
+        <h2 class='section_title'>Statistiche bonus/malus</h2>
+        <div class="bonus_malus_meta_grid" id="bonus_malus_meta_grid">
+            <div class='grid_item'>Totale bonus: <br><h3>{{totale_bonus}}</h3></div>
+            <div class='grid_item'>Totale malus:<br><h3> {{totale_malus}}</h3></div>
+            <div class='grid_item'>Partite con bonus: <br><h3>{{partite_bonus}}</h3></div>
+            <div class='grid_item'>% partite con bonus: <br><h3>{{perc_bonus_match}}</h3></div>
+            <div class='grid_item'></div>
+
+    
+            <div class='grid_item'>Fantavoto minore di 5: <br><h3>{{perc_fv_5}} </h3></div>
+            <div class='grid_item'>Fantavoto tra 5 e 6: <br><h3>{{perc_fv_5_6}} </h3></div>
+            <div class='grid_item'>Fantavoto tra 6 e 7: <br><h3>{{perc_fv_6_7}} </h3></div>
+            <div class='grid_item'>Fantavoto tra 7 e 8: <br><h3>{{perc_fv_7_8}} </h3> </div>
+            <div class='grid_item'>Fantavoto sopra 8: <br><h3> {{perc_fv_8}} </h3></div>
+        </div>
+
+        <h2 class='section_title'>Plot</h2>
+        <div class='div-history_plot' id='div-history_plot'>
+            {{history_plot|safe}}
+        </div>
+        <div class='div-bonus_plot'id='div-bonus_plot' >
+            {{bonus_plot|safe}}
+        </div>
+
+    </div>
+</body>
+</html>    

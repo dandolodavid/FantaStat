@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{nome}} Team Builder </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/classifica_page.css') }}"></head>
+<body>    
+    <header>
+            <div class="navbar_menu">
+                
+                <h3>FantaStat</h3>
+                <ul>
+                    <li class = 'sidebar-item'><a href="/classifica">Info squadre</a></li>
+                    <li class = 'sidebar-item'><a href="/role-explorer">Info ruolo</a></li>
+                    <li class = 'sidebar-item'><a href="/player-page">Info giocatore</a></li>
+                    <li class = 'sidebar-item'><a href="#/team-builder">Team Builder</a></li>
+                </ul>
+
+            </div>
+    </header>
+
+    <div class = 'main_content'>
+        
+        <table class="sortable tabella table">
+            <thead>
+                <tr>
+                    {% for col_name in table.columns%}
+                    <th> {{col_name}}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            
+        <tbody aria-live = 'polite' aria-relevant = 'all'>
+            
+            {% for idx,row in table.iterrows() %}
+
+            <tr class = 'row_classifica'>
+                {% for col in row%}
+                    <th>{{col}}</th>
+                {% endfor %}
+
+            </tr>   
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+    </div>
+       
+</body>
+</html>    

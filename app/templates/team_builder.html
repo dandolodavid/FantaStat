@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{nome}} Team Builder </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/team_builder.css') }}"></head>
+<body>    
+    <header>
+            <div class="navbar_menu">
+                
+                <h3>FantaStat</h3>
+                <ul>
+                    <li class = 'sidebar-item'><a href="/classifica">Info squadre</a></li>
+                    <li class = 'sidebar-item'><a href="/role-explorer">Info ruolo</a></li>
+                    <li class = 'sidebar-item'><a href="/player-page">Info giocatore</a></li>
+                    <li class = 'sidebar-item'><a href="#/team-builder">Team Builder</a></li>
+                </ul>
+
+            </div>
+    </header>
+
+    <div class = 'schema_selection'>
+        
+        Seleziona moduli:
+        <form action= "{{ url_for('handle_team_builder') }}" method="POST">
+            
+            <select name ='modulo_scelto'>
+                {% for modulo in ['3-4-3','4-3-3'] %}
+                    
+                    {% if modulo == modulo_scelto %}
+                        <option selected="selected" value= "{{modulo}}">{{modulo}}</option>"
+                    {% else %}
+                        <option value= "{{modulo}}">{{modulo}}</option>"
+                    {% endif %}
+
+                {% endfor %}
+            </select>
+
+        <button type="submit" class="btn btn-difault" name="scegli_modulo">Scegli</button>
+        </form>        
+
+    </div>
+
+    <div class = 'main_content'>
+
+    <form  action= "{{ url_for('handle_team_builder') }}" method="POST">
+
+                <div class='por'>
+                    <div class='grid_item_por'>
+                    <select name='nome_1'>
+                            {% for name in por_names %}
+                            <option value= "{{name}}">{{name}}</option>"
+                            {% endfor %}
+                        </select>        
+                    </div>
+                </div>
+    
+
+            <div class="{{dif_class}}">
+                {% for i in nomi_dif%}
+                <div class='grid_item_dif'>
+                    <select name="{{i}}">
+                        {% for name in dif_names %}
+                        <option value= "{{name}}">{{name}}</option>"
+                        {% endfor %}
+                    </select>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="{{cen_class}}">
+                {% for i in nomi_cen%}
+                <div class='grid_item_cen'>
+                    <select name="{{i}}">
+                        {% for name in cen_names %}
+                        <option value= "{{name}}">{{name}}</option>"
+                        {% endfor %}
+                    </select>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="{{att_class}}">
+                {% for i in nomi_att%}
+                <div class='grid_item_att'>
+                    <select name="{{i}}">
+                        {% for name in att_names %}
+                        <option value= "{{name}}">{{name}}</option>"
+                        {% endfor %}
+                    </select>
+                </div>
+                {% endfor %}
+            </div>
+        
+            <div class='end'>
+                <div class='grid_item_sent'>
+                <button type="submit" class="btn btn-default" name="build_team">Calcola</button>
+                </div>
+            </div>
+    </form> 
+
+    
+    </div>
+       
+</body>
+</html>    

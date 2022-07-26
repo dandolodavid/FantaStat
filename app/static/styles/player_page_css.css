@@ -1,0 +1,128 @@
+header {
+    padding:5px;
+}
+
+.player_selection {
+  border-radius: 12px;
+  background-color: #7c62ed;
+  padding: 10px;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Helvetica";
+}
+
+.navbar_menu{
+    background-color: #c8d8e4;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.sidebar-item {
+    font-size:15;
+    padding:10px;
+    display: inline;
+}
+
+.sidebar-item a:hover {
+  background-color: rgb(236, 12, 12);
+}
+
+.main_content{
+    position : center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left : 30px;
+    padding-right : 30px;
+    width:auto;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: -10px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 100;
+    min-height: 80vh;
+    max-width: calc(100vw - 50vw);
+    min-width: 300px;
+}
+
+.section_title{
+    padding:10px;
+    border-radius: 12px;
+    background-color: #c8d8e4;
+}
+
+.player_meta_grid {
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color: #52ab98;
+    padding: 20px;
+  }
+
+.player-figure{
+  object-fit: contain;
+  text-align: center;
+}
+
+.player-figure img {
+    padding: 5px;
+    width: auto;
+    height: auto;max-width: min(250px,100%);
+    max-height: min(280px,100%);
+  }
+
+  .presenze_meta_grid {
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    background-color: #52ab98;
+    padding: 20px;
+  }
+
+  .statistiche_meta_grid {
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #52ab98;
+    padding: 20px;
+  }
+
+  .bonus_malus_meta_grid {
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #52ab98;
+    padding: 20px;
+  }
+
+  .grid_item {
+    padding: 5px;
+    font-size: 16;
+    text-align: center;
+  }
+
+  .h1{
+    font-size: 45px;
+  }
+
+
+  .h2{
+    font-size: 30px;
+  }
+
+  
+  .h3{
+    font-size: 25px;
+  }
+
+.bottom{
+    margin-bottom: 0;
+    margin-top:0;
+    padding-bottom: 0;
+    background-color: #232F3E;
+}

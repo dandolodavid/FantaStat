@@ -1,0 +1,611 @@
+,№,Player,Team,Apps,Min,G,A,xG,xA,xG90,xA90,Performance_gol_segnati
+0,1.0,Ciro Immobile,Lazio,30.0,2641.0,27,2,21.95,2.57,0.75,0.09,Over
+1,2.0,Dusan Vlahovic,"Fiorentina, Juventus",32.0,2718.0,23,3,17.38,2.96,0.58,0.1,Over
+2,3.0,Lautaro Martínez,Inter,32.0,2083.0,17,3,20.50,3.55,0.89,0.15,Under
+3,4.0,Giovanni Simeone,"Cagliari, Verona",33.0,2451.0,16,5,11.14,3.07,0.41,0.11,Over
+4,5.0,Tammy Abraham,Roma,34.0,2852.0,15,4,19.25,4.19,0.61,0.13,Under
+5,6.0,Domenico Berardi,Sassuolo,30.0,2620.0,14,14,11.46,9.07,0.39,0.31,Over
+6,7.0,Marko Arnautovic,Bologna,31.0,2532.0,13,1,14.83,3.18,0.53,0.11,Under
+7,8.0,Edin Dzeko,Inter,34.0,2389.0,13,5,15.66,4.34,0.59,0.16,Under
+8,9.0,João Pedro,Cagliari,34.0,3060.0,13,4,12.25,3.55,0.36,0.1,Over
+9,10.0,Victor Osimhen,Napoli,24.0,1791.0,13,2,11.71,2.18,0.59,0.11,Over
+10,11.0,Gianluca Scamacca,Sassuolo,33.0,1921.0,13,0,9.29,1.92,0.44,0.09,Over
+11,12.0,Gerard Deulofeu,Udinese,31.0,2422.0,12,4,8.41,6.82,0.31,0.25,Over
+12,13.0,Gianluca Caprari,Verona,32.0,2508.0,12,7,6.75,6.63,0.24,0.24,Over
+13,14.0,Andrea Pinamonti,Empoli,34.0,2691.0,12,2,11.90,3.17,0.4,0.11,Over
+14,15.0,Mario Pasalic,Atalanta,33.0,1747.0,11,6,8.83,5.27,0.46,0.27,Over
+15,16.0,Dries Mertens,Napoli,27.0,1218.0,11,1,4.99,2.12,0.37,0.16,Over
+16,17.0,Antonin Barak,Verona,28.0,2265.0,11,4,10.65,3.29,0.42,0.13,Over
+17,18.0,Francesco Caputo,"Sampdoria, Sassuolo",35.0,2781.0,11,5,10.91,4.06,0.35,0.13,Over
+18,19.0,Beto,Udinese,28.0,2180.0,11,0,13.28,1.76,0.55,0.07,Under
+19,20.0,Duván Zapata,Atalanta,21.0,1561.0,10,4,13.68,3.76,0.79,0.22,Under
+20,21.0,Lorenzo Insigne,Napoli,29.0,2142.0,10,9,13.41,6.17,0.56,0.26,Under
+21,22.0,Sergej Milinkovic-Savic,Lazio,34.0,2851.0,10,11,7.24,6.14,0.23,0.19,Over
+22,23.0,Rafael Leão,AC Milan,31.0,2382.0,10,4,8.19,4.12,0.31,0.16,Over
+23,24.0,Giacomo Raspadori,Sassuolo,33.0,2516.0,10,4,7.92,3.54,0.28,0.13,Over
+24,25.0,Olivier Giroud,AC Milan,26.0,1730.0,9,3,9.98,2.37,0.52,0.12,Under
+25,26.0,Paulo Dybala,Juventus,25.0,1801.0,9,5,7.96,4.80,0.4,0.24,Over
+26,27.0,Mattia Destro,Genoa,25.0,1685.0,9,1,7.82,0.96,0.42,0.05,Over
+27,28.0,Pedro,Lazio,30.0,1973.0,8,5,3.33,3.53,0.15,0.16,Over
+28,29.0,Andrea Belotti,Torino,19.0,1155.0,8,1,6.98,0.52,0.54,0.04,Over
+29,30.0,Luis Muriel,Atalanta,24.0,1323.0,8,7,6.37,5.50,0.43,0.37,Over
+30,31.0,Lorenzo Pellegrini,Roma,25.0,2068.0,8,4,7.44,7.13,0.32,0.31,Over
+31,32.0,Zlatan Ibrahimovic,AC Milan,21.0,968.0,8,3,7.34,2.37,0.68,0.22,Over
+32,33.0,Álvaro Morata,Juventus,32.0,2175.0,8,6,9.59,5.83,0.4,0.24,Under
+33,34.0,Federico Bonazzoli,Salernitana,27.0,1660.0,8,0,4.99,0.68,0.27,0.04,Over
+34,35.0,Hakan Calhanoglu,Inter,31.0,2297.0,7,10,5.78,7.39,0.23,0.29,Over
+35,36.0,Ivan Perisic,Inter,32.0,2621.0,7,6,4.31,6.57,0.15,0.23,Over
+36,37.0,Manolo Gabbiadini,Sampdoria,18.0,1152.0,7,2,3.96,1.55,0.31,0.12,Over
+37,38.0,Antonio Candreva,Sampdoria,33.0,2918.0,7,8,5.89,8.06,0.18,0.25,Over
+38,39.0,Thomas Henry,Venezia,30.0,1868.0,7,3,6.33,2.42,0.3,0.12,Over
+39,40.0,Hamed Junior Traore,Sassuolo,28.0,1689.0,7,2,5.60,3.71,0.3,0.2,Over
+40,41.0,Mattia Zaccagni,"Lazio, Verona",28.0,1835.0,6,5,4.77,4.21,0.23,0.21,Over
+41,42.0,Daniele Verde,Spezia,30.0,1713.0,6,5,4.70,3.38,0.25,0.18,Over
+42,43.0,Antonio Sanabria,Torino,29.0,1819.0,6,2,9.61,2.10,0.48,0.1,Under
+43,44.0,Fabián,Napoli,30.0,2260.0,6,4,1.36,3.53,0.05,0.14,Over
+44,45.0,Josip Brekalo,Torino,29.0,2086.0,6,2,5.15,5.41,0.22,0.23,Over
+45,46.0,Szymon Zurkowski,Empoli,32.0,2106.0,6,1,4.27,1.08,0.18,0.05,Over
+46,47.0,Ruslan Malinovskiy,Atalanta,27.0,1484.0,6,2,3.29,5.74,0.2,0.35,Over
+47,48.0,Nahuel Molina,Udinese,32.0,2421.0,6,1,3.52,3.48,0.13,0.13,Over
+48,49.0,Nedim Bajrami,Empoli,32.0,1926.0,6,4,5.72,4.02,0.27,0.19,Over
+49,50.0,David Okereke,Venezia,28.0,1916.0,6,0,4.95,0.72,0.23,0.03,Over
+50,51.0,Henrikh Mkhitaryan,Roma,31.0,2517.0,5,6,3.80,4.61,0.14,0.16,Over
+51,52.0,Leonardo Pavoletti,Cagliari,30.0,1273.0,5,1,5.57,0.86,0.39,0.06,Under
+52,53.0,Felipe Anderson,Lazio,35.0,2660.0,5,7,5.02,5.98,0.17,0.2,Under
+53,54.0,Lucas Torreira,Fiorentina,29.0,2146.0,5,1,5.71,1.80,0.24,0.08,Under
+54,55.0,Moise Kean,Juventus,28.0,864.0,5,0,5.19,0.17,0.54,0.02,Under
+55,56.0,Piotr Zielinski,Napoli,32.0,2003.0,5,5,3.12,3.98,0.14,0.18,Over
+56,57.0,Federico Di Francesco,Empoli,24.0,1354.0,5,0,2.32,0.94,0.15,0.06,Over
+57,58.0,Franck Kessié,AC Milan,28.0,2043.0,5,0,4.51,1.34,0.2,0.06,Over
+58,59.0,Sasa Lukic,Torino,33.0,2809.0,5,4,4.51,3.59,0.14,0.11,Over
+59,60.0,Mattia Aramu,Venezia,28.0,1844.0,5,4,5.04,4.09,0.25,0.2,Under
+60,61.0,Rey Manaj,Spezia,27.0,1556.0,5,0,5.58,0.86,0.32,0.05,Under
+61,62.0,Domenico Criscito,Genoa,17.0,1372.0,5,1,4.80,0.55,0.31,0.04,Over
+62,63.0,Milan Djuric,Salernitana,28.0,1756.0,5,2,5.13,2.61,0.26,0.13,Under
+63,64.0,Musa Barrow,Bologna,31.0,1958.0,5,5,4.03,4.82,0.19,0.22,Over
+64,65.0,Hirving Lozano,Napoli,28.0,1471.0,5,5,6.26,2.69,0.38,0.16,Under
+65,66.0,Junior Messias,AC Milan,24.0,1371.0,5,0,3.98,1.51,0.26,0.1,Over
+66,67.0,Emmanuel Gyasi,Spezia,34.0,2880.0,5,0,5.42,1.56,0.17,0.05,Under
+67,68.0,Aaron Hickey,Bologna,33.0,2668.0,5,1,0.73,1.56,0.02,0.05,Over
+68,69.0,Denzel Dumfries,Inter,30.0,1829.0,5,4,5.72,4.41,0.28,0.22,Under
+69,70.0,Alexis Sánchez,Inter,25.0,826.0,4,2,3.66,2.03,0.4,0.22,Over
+70,71.0,Jordan Veretout,Roma,33.0,2090.0,4,8,4.22,5.91,0.18,0.25,Under
+71,72.0,Juan Cuadrado,Juventus,31.0,2353.0,4,3,2.44,6.16,0.09,0.24,Over
+72,73.0,Cristiano Biraghi,Fiorentina,34.0,2919.0,4,1,3.56,5.48,0.11,0.17,Over
+73,74.0,Luis Alberto,Lazio,32.0,2219.0,4,9,3.03,8.19,0.12,0.33,Over
+74,75.0,Nikola Kalinic,Verona,14.0,401.0,4,1,3.86,0.98,0.87,0.22,Over
+75,76.0,Simone Verdi,"Salernitana, Torino",13.0,551.0,4,0,2.14,0.82,0.35,0.13,Over
+76,77.0,Francesco Acerbi,Lazio,27.0,2265.0,4,0,2.94,0.28,0.12,0.01,Over
+77,78.0,Alessandro Deiola,Cagliari,31.0,2038.0,4,1,2.40,1.00,0.11,0.04,Over
+78,79.0,Joaquín Correa,Inter,23.0,840.0,4,1,4.03,1.03,0.43,0.11,Under
+79,80.0,Theo Hernández,AC Milan,29.0,2446.0,4,6,5.05,4.92,0.19,0.18,Under
+80,81.0,Davide Frattesi,Sassuolo,33.0,2697.0,4,2,5.80,3.48,0.19,0.12,Under
+81,82.0,Adrien Tameze,Verona,35.0,2348.0,4,2,0.93,2.01,0.04,0.08,Over
+82,83.0,Riccardo Orsolini,Bologna,27.0,1658.0,4,3,4.48,1.85,0.24,0.1,Under
+83,84.0,Ignacio Pussetto,Udinese,26.0,1079.0,4,4,5.11,1.88,0.43,0.16,Under
+84,85.0,Nicolás González,Fiorentina,30.0,2100.0,4,6,7.69,4.26,0.33,0.18,Under
+85,86.0,Amir Rrahmani,Napoli,31.0,2748.0,4,0,3.78,0.21,0.12,0.01,Over
+86,87.0,Gastón Pereiro,Cagliari,26.0,919.0,4,2,1.53,1.92,0.15,0.19,Over
+87,88.0,Iyenoma Destiny Udogie,Udinese,32.0,2261.0,4,2,3.28,1.94,0.13,0.08,Over
+88,89.0,Tommaso Pobega,Torino,30.0,2090.0,4,3,3.90,2.23,0.17,0.1,Over
+89,90.0,Teun Koopmeiners,Atalanta,27.0,1867.0,4,1,1.59,4.47,0.08,0.22,Over
+90,91.0,Chris Smalling,Roma,25.0,1907.0,3,0,2.27,0.52,0.11,0.02,Over
+91,92.0,Giacomo Bonaventura,Fiorentina,28.0,2055.0,3,4,4.47,2.36,0.2,0.1,Under
+92,93.0,Manuel Locatelli,Juventus,29.0,2014.0,3,4,2.31,1.61,0.1,0.07,Over
+93,94.0,Lorenzo De Silvestri,Bologna,28.0,2045.0,3,1,1.79,1.10,0.08,0.05,Over
+94,95.0,Keita,Cagliari,23.0,1172.0,3,1,3.99,0.92,0.31,0.07,Under
+95,96.0,Milan Skriniar,Inter,32.0,2880.0,3,0,2.73,0.62,0.09,0.02,Over
+96,97.0,Fabio Quagliarella,Sampdoria,31.0,1565.0,3,3,3.01,1.87,0.17,0.11,Under
+97,98.0,Stephan El Shaarawy,Roma,24.0,946.0,3,0,1.66,2.80,0.16,0.27,Over
+98,99.0,Leonardo Bonucci,Juventus,20.0,1643.0,3,1,4.17,0.70,0.23,0.04,Under
+99,100.0,Riccardo Saponara,Fiorentina,26.0,1190.0,3,3,1.79,3.08,0.14,0.23,Over
+100,101.0,Kalidou Koulibaly,Napoli,24.0,2141.0,3,2,1.47,1.32,0.06,0.06,Over
+101,102.0,Nicolò Barella,Inter,33.0,2744.0,3,10,4.28,7.90,0.14,0.26,Under
+102,103.0,Josip Ilicic,Atalanta,19.0,832.0,3,4,2.94,3.36,0.32,0.36,Over
+103,104.0,Andrea Petagna,Napoli,22.0,492.0,3,0,1.58,0.59,0.29,0.11,Over
+104,105.0,Marko Pjaca,Torino,23.0,1092.0,3,0,1.65,0.95,0.14,0.08,Over
+105,106.0,Marten de Roon,Atalanta,26.0,2186.0,3,0,1.87,0.58,0.08,0.02,Over
+106,107.0,Marco Faraoni,Verona,30.0,2431.0,3,5,2.65,2.39,0.1,0.09,Over
+107,108.0,Weston McKennie,Juventus,20.0,1356.0,3,0,3.06,1.25,0.2,0.08,Under
+108,109.0,Manuel Lazzari,Lazio,28.0,1389.0,3,2,0.79,1.44,0.05,0.09,Over
+109,110.0,Brahim Diaz,AC Milan,30.0,1886.0,3,3,4.58,2.49,0.22,0.12,Under
+110,111.0,Riccardo Sottil,Fiorentina,24.0,1238.0,3,2,2.65,2.34,0.19,0.17,Over
+111,112.0,Bremer,Torino,32.0,2807.0,3,1,5.61,0.38,0.18,0.01,Under
+112,113.0,Mattias Svanberg,Bologna,34.0,2514.0,3,3,2.07,2.33,0.07,0.08,Over
+113,114.0,Krzysztof Piatek,Fiorentina,11.0,613.0,3,0,3.53,1.03,0.52,0.15,Under
+114,115.0,Ibañez,Roma,31.0,2614.0,3,0,1.76,0.42,0.06,0.01,Over
+115,116.0,Wilfried Stephane Singo,Torino,34.0,2544.0,3,4,2.85,2.65,0.1,0.09,Over
+116,117.0,Matthijs de Ligt,Juventus,28.0,2427.0,3,0,2.33,1.20,0.09,0.04,Over
+117,118.0,Eljif Elmas,Napoli,34.0,1468.0,3,5,3.35,1.91,0.21,0.12,Under
+118,119.0,Sandro Tonali,AC Milan,33.0,2420.0,3,2,2.68,3.68,0.1,0.14,Over
+119,120.0,Kevin Agudelo,Spezia,20.0,1010.0,3,1,2.02,0.78,0.18,0.07,Over
+120,121.0,Simone Bastoni,Spezia,30.0,2246.0,3,3,1.72,4.57,0.07,0.18,Over
+121,122.0,Domen Crnigoj,Venezia,29.0,1587.0,3,1,1.74,1.15,0.1,0.07,Over
+122,123.0,Maya Yoshida,Sampdoria,25.0,1742.0,2,3,1.00,1.58,0.05,0.08,Over
+123,124.0,Fernando Forestieri,Udinese,4.0,47.0,2,1,1.11,0.06,2.13,0.11,Over
+124,125.0,Bryan Cristante,Roma,31.0,2459.0,2,0,1.60,2.21,0.06,0.08,Over
+125,126.0,Filip Djuricic,Sassuolo,12.0,682.0,2,1,2.57,1.67,0.34,0.22,Under
+126,127.0,Dennis Praet,Torino,20.0,1284.0,2,2,1.73,4.42,0.12,0.31,Over
+127,128.0,Federico Dimarco,Inter,30.0,1313.0,2,2,3.58,5.22,0.25,0.36,Under
+128,129.0,Federico Chiesa,Juventus,14.0,867.0,2,2,2.47,1.07,0.26,0.11,Under
+129,130.0,Gregoire Defrel,Sassuolo,35.0,1265.0,2,2,4.26,2.28,0.3,0.16,Under
+130,131.0,Matteo Politano,Napoli,31.0,1586.0,2,4,3.25,3.52,0.18,0.2,Under
+131,132.0,Roberto Gagliardini,Inter,17.0,592.0,2,1,1.31,1.11,0.2,0.17,Over
+132,133.0,Marcelo Brozovic,Inter,32.0,2700.0,2,1,1.20,2.01,0.04,0.07,Over
+133,134.0,Davide Calabria,AC Milan,23.0,1877.0,2,3,2.94,1.84,0.14,0.09,Under
+134,135.0,Roberto Pereyra,Udinese,21.0,1582.0,2,5,3.37,3.86,0.19,0.22,Under
+135,136.0,Isaac Success,Udinese,22.0,904.0,2,7,2.48,4.07,0.25,0.41,Under
+136,137.0,Nicola Sansone,Bologna,25.0,820.0,2,3,2.49,2.99,0.27,0.33,Under
+137,138.0,Ante Rebic,AC Milan,22.0,781.0,2,2,2.30,4.74,0.26,0.55,Under
+138,139.0,Mohamed Fares,Genoa,9.0,585.0,2,1,1.21,0.53,0.19,0.08,Over
+139,140.0,Simone Romagnoli,Empoli,17.0,1317.0,2,0,1.82,0.71,0.12,0.05,Over
+140,141.0,Martin Erlic,Spezia,27.0,2318.0,2,0,2.14,0.45,0.08,0.02,Under
+141,142.0,Aleksey Miranchuk,Atalanta,18.0,728.0,2,5,1.70,2.92,0.21,0.36,Over
+142,143.0,Maxime Lopez,Sassuolo,32.0,2783.0,2,2,1.10,2.69,0.04,0.09,Over
+143,144.0,Mamadou Coulibaly,Salernitana,10.0,766.0,2,0,1.14,0.23,0.13,0.03,Over
+144,145.0,Patrick Cutrone,Empoli,25.0,1244.0,2,0,3.57,0.62,0.26,0.05,Under
+145,146.0,Sérgio Oliveira,Roma,12.0,813.0,2,1,1.23,1.59,0.14,0.18,Over
+146,147.0,Eldor Shomurodov,Roma,25.0,610.0,2,4,3.70,2.41,0.55,0.36,Under
+147,148.0,Abdelhamid Sabiri,Sampdoria,11.0,637.0,2,1,1.15,0.96,0.16,0.14,Over
+148,149.0,Nicolo Zaniolo,Roma,26.0,1946.0,2,2,6.05,2.37,0.28,0.11,Under
+149,150.0,Rodrigo Becão,Udinese,33.0,2957.0,2,1,1.58,0.79,0.05,0.02,Over
+150,151.0,Ismael Bennacer,AC Milan,28.0,1431.0,2,1,0.69,1.60,0.04,0.1,Over
+151,152.0,Liam Henderson,Empoli,35.0,1909.0,2,3,1.93,3.25,0.09,0.15,Over
+152,153.0,Morten Thorsby,Sampdoria,32.0,2734.0,2,1,3.48,0.91,0.11,0.03,Under
+153,154.0,Andrea La Mantia,Empoli,16.0,409.0,2,1,1.51,0.78,0.33,0.17,Over
+154,155.0,Lazar Samardzic,Udinese,19.0,345.0,2,2,0.77,1.69,0.2,0.44,Over
+155,156.0,M'Bala Nzola,Spezia,21.0,1048.0,2,1,2.82,1.49,0.24,0.13,Under
+156,157.0,Filippo Bandinelli,Empoli,32.0,1753.0,2,3,1.80,3.48,0.09,0.18,Over
+157,158.0,Pietro Ceccaroni,Venezia,30.0,2673.0,2,1,2.13,0.69,0.07,0.02,Under
+158,159.0,Youssef Maleh,Fiorentina,26.0,946.0,2,3,1.92,1.52,0.18,0.14,Over
+159,160.0,Arthur Theate,Bologna,29.0,2348.0,2,1,1.36,0.30,0.05,0.01,Over
+160,161.0,Felix Afena-Gyan,Roma,17.0,654.0,2,0,1.91,0.78,0.26,0.11,Over
+161,162.0,Arthur Cabral,Fiorentina,11.0,606.0,2,1,3.73,0.26,0.55,0.04,Under
+162,163.0,Arturo Vidal,Inter,26.0,626.0,1,1,1.68,1.43,0.24,0.21,Under
+163,164.0,Kaan Ayhan,Sassuolo,21.0,1152.0,1,0,0.16,0.02,0.01,0.0,Over
+164,165.0,Albin Ekdal,Sampdoria,26.0,1641.0,1,0,0.74,0.34,0.04,0.02,Over
+165,166.0,Matteo Darmian,Inter,23.0,1426.0,1,1,0.84,2.24,0.05,0.14,Over
+166,167.0,Federico Fazio,Salernitana,11.0,988.0,1,0,0.42,0.13,0.04,0.01,Over
+167,168.0,Darko Lazovic,Verona,31.0,2539.0,1,4,3.43,5.00,0.12,0.18,Under
+168,169.0,Alessio Romagnoli,AC Milan,18.0,1398.0,1,0,0.79,0.09,0.05,0.01,Over
+169,170.0,Mattia De Sciglio,Juventus,19.0,1064.0,1,2,0.46,2.61,0.04,0.22,Over
+170,171.0,Davide Zappacosta,Atalanta,30.0,2007.0,1,5,1.95,4.47,0.09,0.2,Under
+171,172.0,Danilo Cataldi,Lazio,29.0,1503.0,1,2,0.24,2.20,0.01,0.13,Over
+172,173.0,Jacopo Sala,Spezia,18.0,904.0,1,0,0.08,0.43,0.01,0.04,Over
+173,174.0,Juan Jesus,Napoli,20.0,1178.0,1,0,0.26,0.21,0.02,0.02,Over
+174,175.0,Alessandro Florenzi,AC Milan,21.0,1123.0,1,0,0.74,0.87,0.06,0.07,Over
+175,176.0,Ivan Radovanovic,Salernitana,10.0,698.0,1,0,0.77,0.12,0.1,0.02,Over
+176,177.0,Gianmarco Ferrari,Sassuolo,33.0,2867.0,1,0,1.94,0.87,0.06,0.03,Under
+177,178.0,Simy,Salernitana,19.0,839.0,1,1,2.95,0.74,0.32,0.08,Under
+178,179.0,Federico Ceccherini,Verona,31.0,2195.0,1,0,2.08,0.47,0.09,0.02,Under
+179,180.0,Elseid Hysaj,Lazio,28.0,2023.0,1,0,0.58,0.94,0.03,0.04,Over
+180,181.0,José Callejón,Fiorentina,28.0,1279.0,1,2,1.69,2.84,0.12,0.2,Under
+181,182.0,Nicola Murru,Sampdoria,22.0,994.0,1,0,0.19,0.77,0.02,0.07,Over
+182,183.0,Matías Vecino,Inter,17.0,353.0,1,0,1.10,1.16,0.28,0.3,Under
+183,184.0,Federico Bernardeschi,Juventus,24.0,1259.0,1,2,1.39,1.56,0.1,0.11,Under
+184,185.0,Milan Badelj,Genoa,32.0,2755.0,1,0,0.83,2.02,0.03,0.07,Over
+185,186.0,Stefano Sensi,"Inter, Sampdoria",20.0,923.0,1,0,2.01,0.96,0.2,0.09,Under
+186,187.0,Alfred Duncan,Fiorentina,30.0,1713.0,1,2,1.20,1.43,0.06,0.08,Under
+187,188.0,Rafael Toloi,Atalanta,20.0,1441.0,1,1,1.25,0.57,0.08,0.04,Under
+188,189.0,Mattia Caldara,Venezia,26.0,2253.0,1,0,1.53,0.05,0.06,0.0,Under
+189,190.0,Andrea Conti,"AC Milan, Sampdoria",8.0,231.0,1,0,0.40,0.00,0.16,0.0,Over
+190,191.0,Remo Freuler,Atalanta,25.0,2072.0,1,3,0.79,1.65,0.03,0.07,Over
+191,192.0,Danilo D'Ambrosio,Inter,18.0,938.0,1,1,1.99,0.10,0.19,0.01,Under
+192,193.0,Luca Ceppitelli,Cagliari,21.0,1210.0,1,1,0.23,0.08,0.02,0.01,Over
+193,194.0,Fabio Depaoli,"Sampdoria, Verona",21.0,695.0,1,1,0.54,0.50,0.07,0.06,Over
+194,195.0,Kevin Lasagna,Verona,25.0,956.0,1,4,3.66,2.26,0.34,0.21,Under
+195,196.0,Martín Cáceres,Cagliari,14.0,827.0,1,1,0.23,1.03,0.03,0.11,Over
+196,197.0,Felipe Caicedo,"Genoa, Inter",11.0,272.0,1,2,1.27,0.91,0.42,0.3,Under
+197,198.0,Danilo,Juventus,21.0,1805.0,1,1,0.75,1.23,0.04,0.06,Over
+198,199.0,Álvaro Odriozola,Fiorentina,24.0,1706.0,1,1,1.54,3.06,0.08,0.16,Under
+199,200.0,Jean-Victor Makengo,Udinese,30.0,2127.0,1,3,2.93,1.74,0.12,0.07,Under
+200,201.0,Kelvin Adou,Spezia,29.0,2386.0,1,1,2.88,1.25,0.11,0.05,Under
+201,202.0,Tolgay Arslan,Udinese,29.0,1679.0,1,1,1.16,1.50,0.06,0.08,Under
+202,203.0,José Luis Palomino,Atalanta,30.0,2367.0,1,0,1.53,0.23,0.06,0.01,Under
+203,204.0,Pietro Pellegri,"AC Milan, Torino",12.0,281.0,1,0,0.46,0.22,0.15,0.07,Over
+204,205.0,Alessandro Bastoni,Inter,29.0,2206.0,1,3,0.19,2.18,0.01,0.09,Over
+205,206.0,Grigoris Kastanos,Salernitana,22.0,1208.0,1,1,1.34,1.32,0.1,0.1,Under
+206,207.0,Filippo Melegoni,Genoa,22.0,839.0,1,0,0.47,0.90,0.05,0.1,Over
+207,208.0,Walace,Udinese,33.0,2710.0,1,0,1.13,2.18,0.04,0.07,Under
+208,209.0,Jonathan Ikone,Fiorentina,14.0,466.0,1,1,1.66,1.50,0.32,0.29,Under
+209,210.0,Daniel Bessa,Verona,23.0,726.0,1,1,0.24,0.79,0.03,0.1,Over
+210,211.0,Denis Zakaria,Juventus,7.0,476.0,1,1,1.31,0.14,0.25,0.03,Under
+211,212.0,Robin Gosens,"Atalanta, Inter",12.0,588.0,1,1,1.57,1.07,0.24,0.16,Under
+212,213.0,Nikola Milenkovic,Fiorentina,31.0,2671.0,1,0,1.44,0.52,0.05,0.02,Under
+213,214.0,Petko Hristov,Spezia,16.0,1192.0,1,1,0.49,0.72,0.04,0.05,Over
+214,215.0,Adam Marusic,Lazio,30.0,2460.0,1,1,0.23,0.40,0.01,0.01,Over
+215,216.0,Raoul Bellanova,Cagliari,28.0,2242.0,1,2,1.61,3.37,0.06,0.14,Under
+216,217.0,Dejan Kulusevski,Juventus,20.0,758.0,1,3,2.58,1.53,0.31,0.18,Under
+217,218.0,Luca Ranieri,Salernitana,27.0,2142.0,1,0,1.14,1.15,0.05,0.05,Under
+218,219.0,Federico Santander,Bologna,7.0,58.0,1,0,0.50,0.13,0.77,0.2,Over
+219,220.0,Giovanni Di Lorenzo,Napoli,31.0,2696.0,1,4,0.85,3.03,0.03,0.1,Over
+220,221.0,Leo Stulac,Empoli,21.0,728.0,1,2,0.19,0.37,0.02,0.05,Over
+221,222.0,Mehdi Bourabia,Spezia,8.0,265.0,1,0,0.02,0.05,0.01,0.02,Over
+222,223.0,Matteo Pessina,Atalanta,24.0,1338.0,1,1,2.24,1.23,0.15,0.08,Under
+223,224.0,Roberto Piccoli,"Atalanta, Genoa",17.0,384.0,1,0,1.89,0.29,0.44,0.07,Under
+224,225.0,Merih Demiral,Atalanta,24.0,1812.0,1,1,2.49,0.17,0.12,0.01,Under
+225,226.0,Samuele Ricci,"Empoli, Torino",30.0,2054.0,1,1,0.57,0.71,0.02,0.03,Over
+226,227.0,Carles Pérez,Roma,17.0,413.0,1,1,1.09,1.14,0.24,0.25,Under
+227,228.0,Manolo Portanova,Genoa,21.0,1182.0,1,0,2.79,0.50,0.21,0.04,Under
+228,229.0,Gaetano Castrovilli,Fiorentina,23.0,1399.0,1,1,1.13,0.88,0.07,0.06,Under
+229,230.0,Sofyan Amrabat,Fiorentina,21.0,720.0,1,0,0.08,0.15,0.01,0.02,Over
+230,231.0,Tommaso Augello,Sampdoria,33.0,2117.0,1,1,0.41,2.03,0.02,0.09,Over
+231,232.0,Daniel Maldini,AC Milan,8.0,142.0,1,0,0.55,0.05,0.35,0.03,Over
+232,233.0,Alexis Saelemaekers,AC Milan,33.0,1661.0,1,3,2.67,3.68,0.14,0.2,Under
+233,234.0,Janis Antiste,Spezia,15.0,698.0,1,0,1.22,0.29,0.16,0.04,Under
+234,235.0,Pierre Kalulu Kyatengwa,AC Milan,25.0,1666.0,1,2,0.40,0.91,0.02,0.05,Over
+235,236.0,Pablo Marí,Udinese,13.0,1163.0,1,0,0.25,0.44,0.02,0.03,Over
+236,237.0,Flavio Junior Bianchi,Genoa,7.0,320.0,1,0,0.83,0.11,0.23,0.03,Over
+237,238.0,Ivan Ilic,Verona,30.0,2364.0,1,4,2.44,1.53,0.09,0.06,Under
+238,239.0,Giulio Maggiore,Spezia,32.0,2617.0,1,2,3.41,2.10,0.12,0.07,Under
+239,240.0,Lucas Martínez Quarta,Fiorentina,20.0,1431.0,1,0,1.38,0.58,0.09,0.04,Under
+240,241.0,Matteo Cancellieri,Verona,11.0,187.0,1,0,0.36,0.20,0.17,0.1,Over
+241,242.0,Giorgio Scalvini,Atalanta,15.0,696.0,1,0,1.59,0.26,0.21,0.03,Under
+242,243.0,Joakim Maehle,Atalanta,23.0,1329.0,1,1,1.95,1.10,0.13,0.07,Under
+243,244.0,Viktor Kovalenko,Spezia,23.0,1274.0,1,4,0.32,1.36,0.02,0.1,Over
+244,245.0,Edoardo Bove,Roma,11.0,56.0,1,0,0.02,0.00,0.03,0.0,Over
+245,246.0,Andrea Cambiaso,Genoa,25.0,1766.0,1,4,0.63,2.00,0.03,0.1,Over
+246,247.0,Caleb Ekuban,Genoa,27.0,1634.0,1,2,3.62,2.62,0.2,0.14,Under
+247,248.0,Petar Stojanovic,Empoli,31.0,2568.0,1,1,0.53,2.31,0.02,0.08,Over
+248,249.0,Leonardo Mancuso,Empoli,8.0,432.0,1,0,1.88,0.14,0.39,0.03,Under
+249,250.0,Andrea Schiavone,Salernitana,14.0,552.0,1,0,0.47,0.51,0.08,0.08,Over
+250,251.0,Nadir Zortea,Salernitana,24.0,1141.0,1,2,0.45,0.73,0.04,0.06,Over
+251,252.0,Francesco Forte,Venezia,12.0,394.0,1,0,1.27,0.45,0.29,0.1,Under
+252,253.0,Gianluca Busio,Venezia,28.0,1936.0,1,2,0.71,1.48,0.03,0.07,Over
+253,254.0,Ridgeciano Haps,Venezia,20.0,1687.0,1,1,0.47,0.59,0.02,0.03,Over
+254,255.0,Johan Vásquez,Genoa,27.0,2202.0,1,0,0.86,0.09,0.03,0.0,Over
+255,256.0,Cedric Gondo,Salernitana,14.0,716.0,1,0,1.54,0.63,0.19,0.08,Under
+256,257.0,David Strelec,Spezia,10.0,512.0,1,0,0.28,0.87,0.05,0.15,Over
+257,258.0,Cristian Volpato,Roma,2.0,27.0,1,0,0.07,0.00,0.23,0.0,Over
+258,259.0,Éderson,Salernitana,11.0,803.0,1,1,0.81,0.77,0.09,0.09,Over
+259,260.0,Moustapha Cissé,Atalanta,3.0,28.0,1,0,0.46,0.00,1.48,0.0,Over
+260,261.0,Nadiem Amiri,Genoa,10.0,452.0,0,0,0.33,0.53,0.07,0.11,Under
+261,262.0,Jeremy Toljan,Sassuolo,20.0,1394.0,0,0,0.09,1.24,0.01,0.08,Under
+262,263.0,Ricardo Rodríguez,Torino,31.0,2252.0,0,1,0.30,1.97,0.01,0.08,Under
+263,264.0,Franck Ribéry,Salernitana,22.0,1400.0,0,3,0.54,3.69,0.03,0.24,Under
+264,265.0,Matija Nastasic,Fiorentina,5.0,209.0,0,0,0.07,0.03,0.03,0.01,Under
+265,266.0,Lucas Leiva,Lazio,32.0,1640.0,0,1,0.09,0.29,0.01,0.02,Under
+266,267.0,Aaron Ramsey,Juventus,3.0,97.0,0,0,0.00,0.15,0.0,0.14,Under
+267,268.0,David Ospina,Napoli,29.0,2610.0,0,0,0.00,0.00,0.0,0.0,Under
+268,269.0,Sergio Romero,Venezia,16.0,1440.0,0,0,0.00,0.09,0.0,0.01,Under
+269,270.0,Valon Behrami,Genoa,10.0,287.0,0,0,0.07,0.14,0.02,0.05,Under
+270,271.0,Aleksandar Kolarov,Inter,3.0,38.0,0,0,0.01,0.00,0.03,0.0,Under
+271,272.0,Fikayo Tomori,AC Milan,28.0,2458.0,0,0,0.76,0.06,0.03,0.0,Under
+272,273.0,Ola Aina,Torino,19.0,1263.0,0,0,0.29,1.60,0.02,0.11,Under
+273,274.0,Axel Tuanzebe,Napoli,1.0,7.0,0,0,0.00,0.00,0.0,0.0,Under
+274,275.0,Mattia Perin,Juventus,3.0,270.0,0,0,0.00,0.00,0.0,0.0,Under
+275,276.0,Armando Izzo,Torino,9.0,396.0,0,0,0.62,0.00,0.14,0.0,Under
+276,277.0,Miguel Veloso,Verona,21.0,1257.0,0,3,0.55,1.95,0.04,0.14,Under
+277,278.0,Tomás Rincón,"Sampdoria, Torino",21.0,1068.0,0,0,0.00,0.10,0.0,0.01,Under
+278,279.0,Riccardo Fiamozzi,Empoli,9.0,546.0,0,0,0.00,0.81,0.0,0.13,Under
+279,280.0,Davide Biraschi,Genoa,14.0,938.0,0,0,0.08,0.11,0.01,0.01,Under
+280,281.0,Goran Pandev,Genoa,20.0,820.0,0,1,0.49,0.91,0.05,0.1,Under
+281,282.0,Samir,Udinese,17.0,1430.0,0,0,1.14,0.10,0.07,0.01,Under
+282,283.0,Vincenzo Fiorillo,Salernitana,1.0,90.0,0,0,0.00,0.00,0.0,0.0,Under
+283,284.0,Daniele Baselli,"Cagliari, Torino",13.0,383.0,0,0,1.50,0.77,0.35,0.18,Under
+284,285.0,Marco Benassi,"Empoli, Fiorentina",16.0,479.0,0,0,0.93,0.49,0.17,0.09,Under
+285,286.0,Joel Obi,Salernitana,20.0,1083.0,0,1,1.79,1.49,0.15,0.12,Under
+286,287.0,Daniele Padelli,Udinese,2.0,180.0,0,0,0.00,0.00,0.0,0.0,Under
+287,288.0,Patric,Lazio,22.0,1478.0,0,1,0.41,0.50,0.02,0.03,Under
+288,289.0,Thomas Strakosha,Lazio,20.0,1800.0,0,0,0.00,0.02,0.0,0.0,Under
+289,290.0,Karol Linetty,Torino,15.0,883.0,0,1,0.72,1.13,0.07,0.11,Under
+290,291.0,Wojciech Szczesny,Juventus,31.0,2790.0,0,0,0.00,0.09,0.0,0.0,Under
+291,292.0,Kostas Manolas,Napoli,4.0,312.0,0,0,0.00,0.00,0.0,0.0,Under
+292,293.0,Kevin Strootman,Cagliari,10.0,641.0,0,0,0.02,0.14,0.0,0.02,Under
+293,294.0,Edoardo Goldaniga,"Cagliari, Sassuolo",12.0,941.0,0,0,0.74,0.15,0.07,0.01,Under
+294,295.0,Ilija Nestorovski,Udinese,4.0,26.0,0,0,0.49,0.00,1.7,0.0,Under
+295,296.0,Mato Jajalo,Udinese,22.0,605.0,0,1,0.29,1.19,0.04,0.18,Under
+296,297.0,Giuseppe Pezzella,Atalanta,21.0,1070.0,0,2,0.50,0.87,0.04,0.07,Under
+297,298.0,Alex Sandro,Juventus,24.0,1538.0,0,1,1.07,1.80,0.06,0.11,Under
+298,299.0,Stefano Sturaro,Genoa,25.0,1802.0,0,0,0.38,0.95,0.02,0.05,Under
+299,300.0,Daniele Rugani,Juventus,10.0,745.0,0,0,0.14,0.01,0.02,0.0,Under
+300,301.0,Emil Audero,Sampdoria,26.0,2299.0,0,0,0.00,0.30,0.0,0.01,Under
+301,302.0,Lukasz Skorupski,Bologna,34.0,3060.0,0,0,0.00,0.00,0.0,0.0,Under
+302,303.0,Rade Krunic,AC Milan,25.0,1180.0,0,1,0.62,1.80,0.05,0.14,Under
+303,304.0,Frederic Veseli,Salernitana,9.0,607.0,0,0,0.01,0.00,0.0,0.0,Under
+304,305.0,Leonardo Capezzi,Salernitana,5.0,172.0,0,0,0.00,0.00,0.0,0.0,Under
+305,306.0,Diego Falcinelli,Bologna,6.0,59.0,0,0,0.24,0.00,0.37,0.0,Under
+306,307.0,José Reina,Lazio,15.0,1350.0,0,1,0.00,0.25,0.0,0.02,Under
+307,308.0,Nikola Maksimovic,Genoa,14.0,1115.0,0,0,0.09,0.05,0.01,0.0,Under
+308,309.0,Amadou Diawara,Roma,4.0,169.0,0,0,0.02,0.02,0.01,0.01,Under
+309,310.0,Faouzi Ghoulam,Napoli,12.0,211.0,0,0,0.12,0.21,0.05,0.09,Under
+310,311.0,Marko Rog,Cagliari,5.0,127.0,0,0,0.15,0.00,0.11,0.0,Under
+311,312.0,Luigi Sepe,Salernitana,12.0,1062.0,0,0,0.00,0.00,0.0,0.0,Under
+312,313.0,Lorenzo Tonelli,Empoli,14.0,858.0,0,0,0.69,0.31,0.07,0.03,Under
+313,314.0,Vlad Chiriches,Sassuolo,28.0,2221.0,0,0,0.51,0.02,0.02,0.0,Under
+314,315.0,Ciprian Tatarusanu,AC Milan,6.0,540.0,0,0,0.00,0.00,0.0,0.0,Under
+315,316.0,Sebastien De Maio,Udinese,2.0,180.0,0,0,0.00,0.29,0.0,0.15,Under
+316,317.0,Luca Lezzerini,Venezia,6.0,499.0,0,0,0.00,0.00,0.0,0.0,Under
+317,318.0,Erick Pulgar,Fiorentina,6.0,345.0,0,1,0.07,0.67,0.02,0.17,Under
+318,319.0,Alex Ferrari,Sampdoria,20.0,1387.0,0,0,0.06,0.01,0.0,0.0,Under
+319,320.0,Ibrahima Mbaye,Bologna,6.0,101.0,0,0,0.00,0.00,0.0,0.0,Under
+320,321.0,Andrea Consigli,Sassuolo,34.0,3060.0,0,0,0.00,0.06,0.0,0.0,Under
+321,322.0,Federico Peluso,Sassuolo,1.0,1.0,0,0,0.00,0.00,0.0,0.0,Under
+322,323.0,Francesco Magnanelli,Sassuolo,10.0,208.0,0,0,0.02,0.00,0.01,0.0,Under
+323,324.0,Gianluca Pegolo,Sassuolo,1.0,90.0,0,0,0.00,0.00,0.0,0.0,Under
+324,325.0,Etrit Berisha,Torino,7.0,630.0,0,0,0.00,0.00,0.0,0.0,Under
+325,326.0,Andrea Masiello,Genoa,7.0,521.0,0,0,0.05,0.03,0.01,0.01,Under
+326,327.0,Marco Sportiello,Atalanta,5.0,450.0,0,0,0.00,0.00,0.0,0.0,Under
+327,328.0,Alberto Grassi,Cagliari,27.0,1937.0,0,2,0.84,1.74,0.04,0.08,Under
+328,329.0,Samir Handanovic,Inter,34.0,3060.0,0,0,0.00,0.00,0.0,0.0,Under
+329,330.0,Gary Medel,Bologna,31.0,2657.0,0,1,0.43,0.36,0.01,0.01,Under
+330,331.0,Cristian Ansaldi,Torino,16.0,566.0,0,3,0.25,2.72,0.04,0.43,Under
+331,332.0,Andrea Ranocchia,Inter,5.0,320.0,0,0,0.88,0.00,0.25,0.0,Under
+332,333.0,Diego Perotti,Salernitana,7.0,213.0,0,0,0.26,0.13,0.11,0.06,Under
+333,334.0,Stefan de Vrij,Inter,27.0,2160.0,0,0,1.32,0.00,0.05,0.0,Under
+334,335.0,Stefan Radu,Lazio,9.0,548.0,0,0,0.05,0.00,0.01,0.0,Under
+335,336.0,Bartlomiej Dragowski,Fiorentina,7.0,556.0,0,0,0.00,0.00,0.0,0.0,Under
+336,337.0,Valerio Verre,"Empoli, Sampdoria",18.0,649.0,0,1,1.36,0.63,0.19,0.09,Under
+337,338.0,Giorgio Chiellini,Juventus,18.0,1271.0,0,0,0.84,0.41,0.06,0.03,Under
+338,339.0,Cristian Molinaro,Venezia,8.0,549.0,0,1,0.00,0.27,0.0,0.04,Under
+339,340.0,Norbert Gyömbér,Salernitana,26.0,2149.0,0,0,0.59,0.14,0.02,0.01,Under
+340,341.0,Riccardo Marchizza,Empoli,19.0,1355.0,0,1,0.33,1.64,0.02,0.11,Under
+341,342.0,Diego Farias,Cagliari,4.0,59.0,0,0,0.03,0.00,0.05,0.0,Under
+342,343.0,Sebastiano Luperto,Empoli,21.0,1693.0,0,2,0.77,0.30,0.04,0.02,Under
+343,344.0,Simone Zaza,Torino,10.0,102.0,0,0,1.11,0.00,0.98,0.0,Under
+344,345.0,Lys Mousset,Salernitana,5.0,151.0,0,1,0.08,0.22,0.05,0.13,Under
+345,346.0,Ainsley Maitland-Niles,Roma,7.0,451.0,0,0,0.25,0.35,0.05,0.07,Under
+346,347.0,Stefano Okaka,Udinese,2.0,17.0,0,1,0.04,0.35,0.24,1.85,Under
+347,348.0,Mário Rui,Napoli,32.0,2848.0,0,6,1.71,4.17,0.05,0.13,Under
+348,349.0,Roberto Soriano,Bologna,33.0,2515.0,0,4,2.61,4.27,0.09,0.15,Under
+349,350.0,Ionut Radu,Inter,1.0,90.0,0,0,0.00,0.00,0.0,0.0,Under
+350,351.0,Alex Meret,Napoli,6.0,540.0,0,0,0.00,0.00,0.0,0.0,Under
+351,352.0,Riccardo Gagliolo,Salernitana,16.0,1105.0,0,1,0.35,0.47,0.03,0.04,Under
+352,353.0,Stefano Sabelli,Genoa,7.0,352.0,0,0,0.17,0.11,0.04,0.03,Under
+353,354.0,Vid Belec,Salernitana,21.0,1818.0,0,0,0.00,0.00,0.0,0.0,Under
+354,355.0,Boris Radunovic,Cagliari,3.0,270.0,0,0,0.00,0.00,0.0,0.0,Under
+355,356.0,Berat Gjimshiti,Atalanta,27.0,1936.0,0,1,0.73,2.20,0.03,0.1,Under
+356,357.0,Francesco Bardi,Bologna,1.0,90.0,0,0,0.00,0.00,0.0,0.0,Under
+357,358.0,Andrea Favilli,Genoa,1.0,33.0,0,0,0.00,0.00,0.0,0.0,Under
+358,359.0,Francesco Cassata,Genoa,1.0,5.0,0,0,0.00,0.00,0.0,0.0,Under
+359,360.0,Jacopo Dezi,Venezia,1.0,14.0,0,0,0.01,0.02,0.07,0.12,Under
+360,361.0,Paolo Ghiglione,Genoa,13.0,589.0,0,1,0.36,0.94,0.05,0.14,Under
+361,362.0,Borja Mayoral,Roma,5.0,89.0,0,0,0.14,0.00,0.14,0.0,Under
+362,363.0,Diego Godín,Cagliari,11.0,820.0,0,1,0.27,0.15,0.03,0.02,Under
+363,364.0,Samu Castillejo,AC Milan,5.0,123.0,0,0,0.12,0.18,0.09,0.13,Under
+364,365.0,Cristiano Ronaldo,Juventus,1.0,28.0,0,0,0.20,0.04,0.66,0.11,Under
+365,366.0,Gonzalo Escalante,Lazio,1.0,8.0,0,0,0.00,0.00,0.0,0.0,Under
+366,367.0,Stefan Strandberg,Salernitana,11.0,933.0,0,0,0.39,0.44,0.04,0.04,Under
+367,368.0,Aleksandr Kokorin,Fiorentina,6.0,40.0,0,0,0.00,0.00,0.0,0.0,Under
+368,369.0,Jean-Daniel Akpa-Akpro,Lazio,9.0,303.0,0,0,0.16,0.03,0.05,0.01,Under
+369,370.0,Adam Ounas,Napoli,15.0,296.0,0,0,0.58,0.75,0.18,0.23,Under
+370,371.0,Adrien Rabiot,Juventus,29.0,2033.0,0,2,1.62,1.75,0.07,0.08,Under
+371,372.0,Salvatore Sirigu,Genoa,35.0,3150.0,0,0,0.00,0.00,0.0,0.0,Under
+372,373.0,Lassana Coulibaly,Salernitana,26.0,2014.0,0,0,0.31,0.20,0.01,0.01,Under
+373,374.0,Adama Soumaoro,Bologna,26.0,2081.0,0,0,1.03,0.00,0.04,0.0,Under
+374,375.0,Tiemoué Bakayoko,AC Milan,13.0,472.0,0,0,0.49,0.41,0.09,0.08,Under
+375,376.0,Jeremie Boga,"Atalanta, Sassuolo",23.0,1202.0,0,2,1.89,1.56,0.14,0.12,Under
+376,377.0,Koffi Djidji,Torino,23.0,1705.0,0,0,0.95,0.07,0.05,0.0,Under
+377,378.0,Jean-Pierre Nsamé,Venezia,10.0,208.0,0,1,0.64,0.43,0.28,0.19,Under
+378,379.0,Kevin Malcuit,Napoli,8.0,284.0,0,1,0.04,0.40,0.01,0.13,Under
+379,380.0,Abdoulaye Touré,Genoa,8.0,448.0,0,0,0.12,0.08,0.02,0.02,Under
+380,381.0,Mike Maignan,AC Milan,29.0,2610.0,0,1,0.00,0.23,0.0,0.01,Under
+381,382.0,Rolando Mandragora,Torino,19.0,1246.0,0,2,0.84,3.09,0.06,0.22,Under
+382,383.0,Alessio Cragno,Cagliari,32.0,2880.0,0,0,0.00,0.00,0.0,0.0,Under
+383,384.0,Kevin Bonifazi,Bologna,21.0,1112.0,0,0,0.87,0.89,0.07,0.07,Under
+384,385.0,Sebastian Giovinco,Sampdoria,2.0,34.0,0,0,0.06,0.00,0.16,0.0,Under
+385,386.0,Nani,Venezia,10.0,276.0,0,1,0.08,0.69,0.03,0.22,Under
+386,387.0,Simon Kjaer,AC Milan,11.0,803.0,0,0,0.40,0.38,0.05,0.04,Under
+387,388.0,Zinho Vanheusden,Genoa,14.0,991.0,0,0,0.19,0.12,0.02,0.01,Under
+388,389.0,Bartosz Bereszynski,Sampdoria,32.0,2695.0,0,3,0.65,1.46,0.02,0.05,Under
+389,390.0,Paolo Faragò,Cagliari,1.0,15.0,0,0,0.44,0.00,2.66,0.0,Under
+390,391.0,Matteo Gabbia,AC Milan,8.0,545.0,0,0,0.01,0.06,0.0,0.01,Under
+391,392.0,Francesco Rossi,Atalanta,1.0,36.0,0,0,0.00,0.00,0.0,0.0,Under
+392,393.0,Hans Hateboer,Atalanta,17.0,1178.0,0,0,1.73,0.89,0.13,0.07,Under
+393,394.0,Sofian Kiyine,Venezia,23.0,1105.0,0,0,0.42,2.80,0.03,0.23,Under
+394,395.0,Emanuel Vignato,Bologna,22.0,524.0,0,1,0.27,1.24,0.05,0.21,Under
+395,396.0,Filippo Delli Carri,Salernitana,5.0,330.0,0,0,0.19,0.07,0.05,0.02,Under
+396,397.0,Giorgio Altare,Cagliari,16.0,1216.0,0,0,1.09,0.33,0.08,0.02,Under
+397,398.0,Luca Pellegrini,Juventus,16.0,1034.0,0,1,0.17,1.54,0.02,0.13,Under
+398,399.0,Wladimiro Falcone,Sampdoria,10.0,851.0,0,0,0.00,0.00,0.0,0.0,Under
+399,400.0,Alessandro Buongiorno,Torino,22.0,1132.0,0,2,0.41,0.67,0.03,0.05,Under
+400,401.0,Gianluca Frabotta,Verona,1.0,1.0,0,0,0.00,0.00,0.0,0.0,Under
+401,402.0,Martin Hongla,Verona,15.0,516.0,0,0,0.66,0.08,0.12,0.01,Under
+402,403.0,Diego Demme,Napoli,17.0,596.0,0,0,0.01,0.33,0.0,0.05,Under
+403,404.0,Hernani,Genoa,16.0,570.0,0,0,0.33,0.42,0.05,0.07,Under
+404,405.0,Dalbert,Cagliari,27.0,2029.0,0,2,1.25,1.92,0.06,0.09,Under
+405,406.0,Fode Toure,AC Milan,10.0,435.0,0,0,0.27,0.16,0.06,0.03,Under
+406,407.0,Niki Mäenpää,Venezia,12.0,1031.0,0,0,0.00,0.00,0.0,0.0,Under
+407,408.0,Rodrigo Bentancur,Juventus,19.0,1164.0,0,2,0.50,0.88,0.04,0.07,Under
+408,409.0,Stanislav Lobotka,Napoli,20.0,1578.0,0,0,0.02,0.76,0.0,0.04,Under
+409,410.0,Marco Silvestri,Udinese,33.0,2970.0,0,0,0.00,0.04,0.0,0.0,Under
+410,411.0,Michaël Cuisance,Venezia,10.0,740.0,0,0,0.67,0.49,0.08,0.06,Under
+411,412.0,Gianluca Mancini,Roma,31.0,2720.0,0,0,3.18,0.55,0.11,0.02,Under
+412,413.0,Nicolas Haas,Empoli,16.0,1010.0,0,2,0.58,0.98,0.05,0.09,Under
+413,414.0,Vanja Milinkovic-Savic,Torino,27.0,2430.0,0,0,0.08,0.00,0.0,0.0,Under
+414,415.0,Giovanni Crociata,Empoli,1.0,14.0,0,0,0.12,0.00,0.8,0.0,Under
+415,416.0,Luiz Felipe,Lazio,30.0,2451.0,0,0,0.37,0.15,0.01,0.01,Under
+416,417.0,Lorenzo Venuti,Fiorentina,20.0,1358.0,0,0,0.18,0.26,0.01,0.02,Under
+417,418.0,Nicolas Viola,Bologna,6.0,100.0,0,0,0.02,0.00,0.02,0.0,Under
+418,419.0,Eddie Salcedo,Spezia,10.0,408.0,0,0,1.39,0.18,0.31,0.04,Under
+419,420.0,Bram Nuytinck,Udinese,24.0,1834.0,0,0,0.62,0.28,0.03,0.01,Under
+420,421.0,Mattia Bani,Genoa,15.0,1027.0,0,0,0.27,0.07,0.02,0.01,Under
+421,422.0,Pawel Jaroszynski,Salernitana,13.0,497.0,0,0,0.06,0.55,0.01,0.1,Under
+422,423.0,Jens Stryger Larsen,Udinese,11.0,692.0,0,1,0.72,0.88,0.09,0.11,Under
+423,424.0,Marvin Zeegelaar,Udinese,14.0,631.0,0,0,0.17,0.01,0.02,0.0,Under
+424,425.0,Rogerio,Sassuolo,22.0,1640.0,0,1,0.39,1.70,0.02,0.09,Under
+425,426.0,Panagiotis Retsos,Verona,5.0,44.0,0,0,0.00,0.03,0.0,0.07,Under
+426,427.0,Marash Kumbulla,Roma,15.0,901.0,0,0,0.65,0.09,0.06,0.01,Under
+427,428.0,Rick Karsdorp,Roma,33.0,2740.0,0,2,0.04,4.93,0.0,0.16,Under
+428,429.0,Ethan Ampadu,Venezia,25.0,1936.0,0,3,0.22,1.36,0.01,0.06,Under
+429,430.0,Luca Gagliano,Cagliari,2.0,9.0,0,0,0.00,0.00,0.0,0.0,Under
+430,431.0,Franck Zambo,Napoli,22.0,1736.0,0,1,1.08,1.45,0.06,0.08,Under
+431,432.0,Ben Kone,Torino,1.0,83.0,0,0,0.00,0.12,0.0,0.13,Under
+432,433.0,Adrien Silva,Sampdoria,17.0,1082.0,0,1,0.27,0.33,0.02,0.03,Under
+433,434.0,Charalampos Lykogiannis,Cagliari,25.0,1607.0,0,0,0.90,0.91,0.05,0.05,Under
+434,435.0,Damir Ceter,Cagliari,1.0,4.0,0,0,0.00,0.00,0.0,0.0,Under
+435,436.0,Kingsley Michael,Bologna,2.0,81.0,0,0,0.01,0.00,0.01,0.0,Under
+436,437.0,Rui Patrício,Roma,35.0,3150.0,0,0,0.00,0.00,0.0,0.0,Under
+437,438.0,Toma Basic,Lazio,26.0,845.0,0,2,1.42,0.97,0.15,0.1,Under
+438,439.0,Arthur,Juventus,18.0,870.0,0,0,0.12,0.49,0.01,0.05,Under
+439,440.0,Mitchell Dijks,Bologna,14.0,583.0,0,1,0.67,1.19,0.1,0.18,Under
+440,441.0,Pietro Terracciano,Fiorentina,29.0,2591.0,0,0,0.00,0.04,0.0,0.0,Under
+441,442.0,Ivan Provedel,Spezia,28.0,2520.0,0,0,0.01,0.00,0.0,0.0,Under
+442,443.0,Samuel Mráz,Spezia,2.0,47.0,0,0,0.01,0.00,0.02,0.0,Under
+443,444.0,Giangiacomo Magnani,"Sampdoria, Verona",17.0,742.0,0,0,0.42,0.00,0.05,0.0,Under
+444,445.0,Arkadiusz Reca,Spezia,23.0,1705.0,0,2,0.51,2.30,0.03,0.12,Under
+445,446.0,Koray Günter,Verona,28.0,2284.0,0,0,0.20,0.80,0.01,0.03,Under
+446,447.0,Juan Musso,Atalanta,29.0,2572.0,0,0,0.00,0.00,0.0,0.0,Under
+447,448.0,Omar Colley,Sampdoria,30.0,2572.0,0,0,1.20,0.00,0.04,0.0,Under
+448,449.0,Ronaldo Vieira,Sampdoria,11.0,219.0,0,0,0.08,0.00,0.03,0.0,Under
+449,450.0,Arnór Sigurdsson,Venezia,9.0,160.0,0,0,0.11,0.03,0.06,0.02,Under
+450,451.0,Luca Gemello,Torino,1.0,90.0,0,0,0.00,0.00,0.0,0.0,Under
+451,452.0,Dimitris Nikolaou,Spezia,33.0,2970.0,0,0,0.12,0.15,0.0,0.0,Under
+452,453.0,Simone Trimboli,Sampdoria,2.0,23.0,0,0,0.00,0.00,0.0,0.0,Under
+453,454.0,Nicolo Rovella,Genoa,20.0,1449.0,0,3,0.54,3.01,0.03,0.19,Under
+454,455.0,Christian Oliva,Cagliari,4.0,42.0,0,0,0.00,0.00,0.0,0.0,Under
+455,456.0,Gianluca Gaetano,Napoli,2.0,17.0,0,0,0.00,0.00,0.0,0.0,Under
+456,457.0,Nehuén Pérez,Udinese,17.0,1455.0,0,1,0.29,0.54,0.02,0.03,Under
+457,458.0,Aleksa Terzic,Fiorentina,12.0,222.0,0,1,0.00,0.56,0.0,0.23,Under
+458,459.0,Pawel Dawidowicz,Verona,15.0,1183.0,0,0,0.59,0.22,0.04,0.02,Under
+459,460.0,Takehiro Tomiyasu,Bologna,1.0,6.0,0,0,0.00,0.08,0.0,1.23,Under
+460,461.0,Jerdy Schouten,Bologna,14.0,1171.0,0,1,0.09,0.61,0.01,0.05,Under
+461,462.0,Andreas Skov Olsen,Bologna,18.0,732.0,0,2,1.29,0.28,0.16,0.03,Under
+462,463.0,Julian Chabot,Sampdoria,11.0,477.0,0,0,0.05,0.00,0.01,0.0,Under
+463,464.0,Denis Vavro,Lazio,1.0,5.0,0,0,0.00,0.00,0.0,0.0,Under
+464,465.0,André Anderson,Lazio,4.0,56.0,0,0,0.14,0.00,0.22,0.0,Under
+465,466.0,Igor Julio,Fiorentina,27.0,1954.0,0,0,0.34,0.75,0.02,0.03,Under
+466,467.0,Mert Müldür,Sassuolo,28.0,1792.0,0,1,0.48,0.78,0.02,0.04,Under
+467,468.0,Nahitan Nández,Cagliari,19.0,1394.0,0,2,0.79,2.36,0.05,0.15,Under
+468,469.0,Ernesto Torregrossa,Sampdoria,10.0,99.0,0,0,0.00,0.07,0.0,0.06,Under
+469,470.0,Ales Mateju,Venezia,4.0,316.0,0,1,0.12,1.05,0.04,0.3,Under
+470,471.0,Yildirim Mert Cetin,Verona,2.0,42.0,0,0,0.00,0.00,0.0,0.0,Under
+471,472.0,Sebastian Walukiewicz,Cagliari,7.0,305.0,0,0,0.59,0.02,0.17,0.01,Under
+472,473.0,Georgios Kyriakopoulos,Sassuolo,27.0,1793.0,0,5,1.24,3.84,0.06,0.19,Under
+473,474.0,Samuel Di Carmine,Verona,1.0,31.0,0,0,0.02,0.00,0.05,0.0,Under
+474,475.0,Marley Aké,Juventus,1.0,3.0,0,0,0.00,0.00,0.0,0.0,Under
+475,476.0,Riccardo Calafiori,"Genoa, Roma",9.0,251.0,0,1,0.05,0.68,0.02,0.24,Under
+476,477.0,Ebrima Darboe,Roma,1.0,65.0,0,0,0.06,0.00,0.09,0.0,Under
+477,478.0,Edoardo Vergani,Salernitana,6.0,84.0,0,0,0.00,0.00,0.0,0.0,Under
+478,479.0,Ebrima Colley,Spezia,11.0,388.0,0,0,0.74,1.73,0.17,0.4,Under
+479,480.0,Brian Oddei,Sassuolo,2.0,7.0,0,0,0.15,0.00,1.93,0.0,Under
+480,481.0,Andrea Carboni,Cagliari,28.0,2121.0,0,0,0.49,0.07,0.02,0.0,Under
+481,482.0,Nicolás Domínguez,Bologna,26.0,1894.0,0,3,0.72,2.35,0.03,0.11,Under
+482,483.0,Kristoffer Askildsen,Sampdoria,17.0,723.0,0,0,0.33,0.13,0.04,0.02,Under
+483,484.0,Luka Romero,Lazio,6.0,42.0,0,0,0.01,0.06,0.03,0.13,Under
+484,485.0,Bosko Sutalo,Verona,21.0,812.0,0,0,0.10,0.07,0.01,0.01,Under
+485,486.0,Filippo Terracciano,Verona,1.0,6.0,0,0,0.00,0.00,0.0,0.0,Under
+486,487.0,Matteo Lovato,"Atalanta, Cagliari",20.0,1423.0,0,1,0.17,0.15,0.01,0.01,Under
+487,488.0,Raul Moro,Lazio,11.0,175.0,0,1,0.20,0.23,0.1,0.12,Under
+488,489.0,Brandon Soppy,Udinese,25.0,685.0,0,0,0.35,0.19,0.05,0.02,Under
+489,490.0,Mergim Vojvoda,Torino,27.0,1864.0,0,2,1.20,2.35,0.06,0.11,Under
+490,491.0,Nicolò Casale,Verona,33.0,2386.0,0,2,0.51,1.02,0.02,0.04,Under
+491,492.0,Ivor Pandur,Verona,3.0,270.0,0,0,0.00,0.00,0.0,0.0,Under
+492,493.0,Razvan Marin,Cagliari,33.0,2678.0,0,5,1.76,5.57,0.06,0.19,Under
+493,494.0,Gabriele Zappa,Cagliari,25.0,1124.0,0,0,0.29,0.66,0.02,0.05,Under
+494,495.0,Guglielmo Vicario,Empoli,35.0,3150.0,0,0,0.00,0.01,0.0,0.0,Under
+495,496.0,Mikkel Damsgaard,Sampdoria,8.0,519.0,0,0,0.44,0.45,0.08,0.08,Under
+496,497.0,Sam Lammers,Atalanta,2.0,34.0,0,0,0.00,0.00,0.0,0.0,Under
+497,498.0,Matteo Ruggeri,Salernitana,9.0,423.0,0,0,0.01,0.29,0.0,0.06,Under
+498,499.0,Lorenzo Montipò,Verona,32.0,2880.0,0,0,0.00,0.00,0.0,0.0,Under
+499,500.0,Jeroen Zoet,Spezia,7.0,630.0,0,0,0.00,0.00,0.0,0.0,Under
+500,501.0,Salvador Ferrer,Spezia,25.0,1335.0,0,0,0.21,0.73,0.01,0.05,Under
+501,502.0,Luca Vignali,Spezia,2.0,87.0,0,0,0.00,0.00,0.0,0.0,Under
+502,503.0,Martín Satriano,Inter,4.0,30.0,0,0,0.00,0.04,0.0,0.11,Under
+503,504.0,Vedat Muriqi,Lazio,11.0,186.0,0,0,0.81,0.00,0.39,0.0,Under
+504,505.0,Nicola Zalewski,Roma,13.0,635.0,0,0,0.35,0.13,0.05,0.02,Under
+505,506.0,Ardian Ismajli,Empoli,19.0,1241.0,0,0,0.21,0.11,0.02,0.01,Under
+506,507.0,Suf Podgoreanu,Spezia,5.0,102.0,0,1,0.04,0.03,0.03,0.03,Under
+507,508.0,Radu Dragusin,"Salernitana, Sampdoria",19.0,1083.0,0,0,0.13,0.16,0.01,0.01,Under
+508,509.0,Mihai Valentin Mihaila,Atalanta,4.0,66.0,0,0,0.03,0.00,0.05,0.0,Under
+509,510.0,Riccardo Ciervo,Sampdoria,10.0,213.0,0,0,0.07,0.16,0.03,0.07,Under
+510,511.0,Ebenezer Annan,Bologna,1.0,23.0,0,0,0.00,0.00,0.0,0.0,Under
+511,512.0,Bryan Reynolds,Roma,1.0,1.0,0,0,0.00,0.00,0.0,0.0,Under
+512,513.0,Emil Bohinen,Salernitana,7.0,392.0,0,1,0.02,0.24,0.0,0.05,Under
+513,514.0,Luca Stanga,AC Milan,1.0,2.0,0,0,0.00,0.00,0.0,0.0,Under
+514,515.0,Luigi Samele,Sassuolo,2.0,2.0,0,1,0.00,0.33,0.0,14.85,Under
+515,516.0,Yayah Kallon,Genoa,15.0,615.0,0,1,1.23,1.19,0.18,0.17,Under
+516,517.0,Laurens Serpe,Genoa,1.0,41.0,0,0,0.00,0.00,0.0,0.0,Under
+517,518.0,Aleksander Buksa,Genoa,4.0,57.0,0,0,0.00,0.00,0.0,0.0,Under
+518,519.0,Magnus Warming,Torino,4.0,50.0,0,0,0.00,0.00,0.0,0.0,Under
+519,520.0,Kristjan Asllani,Empoli,20.0,1064.0,0,0,0.44,0.64,0.04,0.05,Under
+520,521.0,Mattia Viti,Empoli,19.0,1392.0,0,0,0.48,0.06,0.03,0.0,Under
+521,522.0,Sydney van Hooijdonk,Bologna,4.0,32.0,0,0,0.00,0.00,0.0,0.0,Under
+522,523.0,Wajdi Kechrida,Salernitana,17.0,950.0,0,1,0.26,0.59,0.03,0.06,Under
+523,524.0,Luka Bogdan,Salernitana,6.0,393.0,0,0,0.02,0.00,0.01,0.0,Under
+524,525.0,Ramzi Aya,Salernitana,2.0,137.0,0,0,0.02,0.00,0.01,0.0,Under
+525,526.0,Julian Kristoffersen,Salernitana,1.0,5.0,0,0,0.03,0.00,0.61,0.0,Under
+526,527.0,Kaio Jorge,Juventus,9.0,111.0,0,0,0.53,0.55,0.43,0.44,Under
+527,528.0,Alessandro Zanoli,Napoli,11.0,357.0,0,0,0.00,0.07,0.0,0.02,Under
+528,529.0,Tyronne Ebuehi,Venezia,18.0,1132.0,0,0,0.44,0.54,0.04,0.04,Under
+529,530.0,Daan Heymans,Venezia,7.0,250.0,0,1,0.05,0.14,0.02,0.05,Under
+530,531.0,Dor Peretz,Venezia,13.0,348.0,0,0,0.73,0.06,0.19,0.02,Under
+531,532.0,Luca Fiordilino,Venezia,11.0,477.0,0,0,0.30,0.25,0.06,0.05,Under
+532,533.0,Dennis Johnsen,Venezia,23.0,1347.0,0,2,1.15,3.22,0.08,0.22,Under
+533,534.0,Francesco Di Mariano,Venezia,1.0,65.0,0,0,0.00,0.02,0.0,0.03,Under
+534,535.0,Tanner Tessmann,Venezia,19.0,639.0,0,0,0.56,0.19,0.08,0.03,Under
+535,536.0,Nicolas Galazzi,Venezia,1.0,14.0,0,0,0.00,0.00,0.0,0.0,Under
+536,537.0,Michael Svoboda,Venezia,14.0,949.0,0,0,0.83,0.00,0.08,0.0,Under
+537,538.0,David Schnegg,Venezia,4.0,145.0,0,0,0.00,0.01,0.0,0.01,Under
+538,539.0,Bjarki Steinn Bjarkason,Venezia,1.0,2.0,0,0,0.00,0.00,0.0,0.0,Under
+539,540.0,Matias Viña,Roma,25.0,1563.0,0,1,0.62,1.21,0.04,0.07,Under
+540,541.0,Pasquale Mazzocchi,"Salernitana, Venezia",28.0,2099.0,0,2,0.34,1.90,0.01,0.08,Under
+541,542.0,Antonio Vacca,Venezia,18.0,955.0,0,1,0.01,0.11,0.0,0.01,Under
+542,543.0,Marco Modolo,Venezia,6.0,388.0,0,0,0.04,0.00,0.01,0.0,Under
+543,544.0,Luis Binks,Bologna,14.0,594.0,0,0,0.07,0.01,0.01,0.0,Under
+544,545.0,Fabiano Parisi,Empoli,22.0,1285.0,0,1,0.47,0.36,0.03,0.03,Under
+545,546.0,Matheus Henrique,Sassuolo,22.0,781.0,0,1,0.20,0.80,0.02,0.09,Under
+546,547.0,Francesco Di Tacchio,Salernitana,18.0,1262.0,0,0,0.43,0.16,0.03,0.01,Under
+547,548.0,Matìas Soulè Malvano,Juventus,2.0,2.0,0,0,0.08,0.00,3.51,0.0,Under
+548,549.0,Fabio Miretti,Juventus,2.0,2.0,0,0,0.00,0.00,0.0,0.0,Under
+549,550.0,David Zima,Torino,18.0,1114.0,0,1,0.60,0.87,0.05,0.07,Under
+550,551.0,Abdou Harroui,Sassuolo,22.0,408.0,0,0,0.58,0.21,0.13,0.05,Under
+551,552.0,Jakub Kiwior,Spezia,19.0,1694.0,0,0,0.31,0.20,0.02,0.01,Under
+552,553.0,Pablo Galdames,Genoa,16.0,861.0,0,0,0.39,0.85,0.04,0.09,Under
+553,554.0,Aimar Sher,Spezia,1.0,41.0,0,0,0.00,0.00,0.0,0.0,Under
+554,555.0,Gerard Yepes,Sampdoria,3.0,11.0,0,0,0.00,0.00,0.0,0.0,Under
+555,556.0,Adam Obert,Cagliari,6.0,277.0,0,0,0.00,0.00,0.0,0.0,Under
+556,557.0,Niklas Pyyhtia,Bologna,1.0,17.0,0,0,0.00,0.00,0.0,0.0,Under
+557,558.0,Aurélien Nguiamba,Spezia,2.0,25.0,0,0,0.00,0.00,0.0,0.0,Under
+558,559.0,Filippo Distefano,Fiorentina,1.0,1.0,0,0,0.00,0.00,0.0,0.0,Under
+559,560.0,Mattia Zanotti,Inter,1.0,7.0,0,0,0.00,0.12,0.0,1.59,Under
+560,561.0,Diego Coppola,Verona,3.0,157.0,0,0,0.12,0.00,0.07,0.0,Under
+561,562.0,Ruan,Sassuolo,8.0,181.0,0,0,0.00,0.10,0.0,0.05,Under
+562,563.0,Silvan Hefti,Genoa,13.0,1052.0,0,0,0.14,0.53,0.01,0.05,Under
+563,564.0,Leo Østigard,Genoa,12.0,900.0,0,0,0.18,0.06,0.02,0.01,Under
+564,565.0,Giorgio Cittadini,Atalanta,2.0,2.0,0,0,0.00,0.00,0.0,0.0,Under
+565,566.0,Alessandro Russo,Salernitana,1.0,25.0,0,0,0.00,0.00,0.0,0.0,Under
+566,567.0,Andrei Motoc,Salernitana,1.0,90.0,0,0,0.02,0.00,0.02,0.0,Under
+567,568.0,Mario Perrone,Salernitana,1.0,12.0,0,0,0.00,0.00,0.0,0.0,Under
+568,569.0,Dimitrios Keramitsis,Roma,1.0,1.0,0,0,0.00,0.00,0.0,0.0,Under
+569,570.0,Kelvin Yeboah,Genoa,14.0,632.0,0,1,1.54,1.19,0.22,0.17,Under
+570,561.0,Diego Coppola,Verona,3.0,157.0,0,0,0.12,0.00,0.07,0.0,Under
+571,562.0,Ruan,Sassuolo,8.0,181.0,0,0,0.00,0.10,0.0,0.05,Under
+572,563.0,Silvan Hefti,Genoa,13.0,1052.0,0,0,0.14,0.53,0.01,0.05,Under
+573,564.0,Leo Østigard,Genoa,12.0,900.0,0,0,0.18,0.06,0.02,0.01,Under
+574,565.0,Giorgio Cittadini,Atalanta,2.0,2.0,0,0,0.00,0.00,0.0,0.0,Under
+575,566.0,Alessandro Russo,Salernitana,1.0,25.0,0,0,0.00,0.00,0.0,0.0,Under
+576,567.0,Andrei Motoc,Salernitana,1.0,90.0,0,0,0.02,0.00,0.02,0.0,Under
+577,568.0,Mario Perrone,Salernitana,1.0,12.0,0,0,0.00,0.00,0.0,0.0,Under
+578,569.0,Dimitrios Keramitsis,Roma,1.0,1.0,0,0,0.00,0.00,0.0,0.0,Under
+579,570.0,Kelvin Yeboah,Genoa,14.0,632.0,0,1,1.54,1.19,0.22,0.17,Under
+580,561.0,Diego Coppola,Verona,3.0,157.0,0,0,0.12,0.00,0.07,0.0,Under
+581,562.0,Ruan,Sassuolo,8.0,181.0,0,0,0.00,0.10,0.0,0.05,Under
+582,563.0,Silvan Hefti,Genoa,13.0,1052.0,0,0,0.14,0.53,0.01,0.05,Under
+583,564.0,Leo Østigard,Genoa,12.0,900.0,0,0,0.18,0.06,0.02,0.01,Under
+584,565.0,Giorgio Cittadini,Atalanta,2.0,2.0,0,0,0.00,0.00,0.0,0.0,Under
+585,566.0,Alessandro Russo,Salernitana,1.0,25.0,0,0,0.00,0.00,0.0,0.0,Under
+586,567.0,Andrei Motoc,Salernitana,1.0,90.0,0,0,0.02,0.00,0.02,0.0,Under
+587,568.0,Mario Perrone,Salernitana,1.0,12.0,0,0,0.00,0.00,0.0,0.0,Under
+588,569.0,Dimitrios Keramitsis,Roma,1.0,1.0,0,0,0.00,0.00,0.0,0.0,Under
+589,570.0,Kelvin Yeboah,Genoa,14.0,632.0,0,1,1.54,1.19,0.22,0.17,Under
+590,561.0,Diego Coppola,Verona,3.0,157.0,0,0,0.12,0.00,0.07,0.0,Under
+591,562.0,Ruan,Sassuolo,8.0,181.0,0,0,0.00,0.10,0.0,0.05,Under
+592,563.0,Silvan Hefti,Genoa,13.0,1052.0,0,0,0.14,0.53,0.01,0.05,Under
+593,564.0,Leo Østigard,Genoa,12.0,900.0,0,0,0.18,0.06,0.02,0.01,Under
+594,565.0,Giorgio Cittadini,Atalanta,2.0,2.0,0,0,0.00,0.00,0.0,0.0,Under
+595,566.0,Alessandro Russo,Salernitana,1.0,25.0,0,0,0.00,0.00,0.0,0.0,Under
+596,567.0,Andrei Motoc,Salernitana,1.0,90.0,0,0,0.02,0.00,0.02,0.0,Under
+597,568.0,Mario Perrone,Salernitana,1.0,12.0,0,0,0.00,0.00,0.0,0.0,Under
+598,569.0,Dimitrios Keramitsis,Roma,1.0,1.0,0,0,0.00,0.00,0.0,0.0,Under
+599,570.0,Kelvin Yeboah,Genoa,14.0,632.0,0,1,1.54,1.19,0.22,0.17,Under
+600,561.0,Diego Coppola,Verona,3.0,157.0,0,0,0.12,0.00,0.07,0.0,Under
+601,562.0,Ruan,Sassuolo,8.0,181.0,0,0,0.00,0.10,0.0,0.05,Under
+602,563.0,Silvan Hefti,Genoa,13.0,1052.0,0,0,0.14,0.53,0.01,0.05,Under
+603,564.0,Leo Østigard,Genoa,12.0,900.0,0,0,0.18,0.06,0.02,0.01,Under
+604,565.0,Giorgio Cittadini,Atalanta,2.0,2.0,0,0,0.00,0.00,0.0,0.0,Under
+605,566.0,Alessandro Russo,Salernitana,1.0,25.0,0,0,0.00,0.00,0.0,0.0,Under
+606,567.0,Andrei Motoc,Salernitana,1.0,90.0,0,0,0.02,0.00,0.02,0.0,Under
+607,568.0,Mario Perrone,Salernitana,1.0,12.0,0,0,0.00,0.00,0.0,0.0,Under
+608,569.0,Dimitrios Keramitsis,Roma,1.0,1.0,0,0,0.00,0.00,0.0,0.0,Under
+609,570.0,Kelvin Yeboah,Genoa,14.0,632.0,0,1,1.54,1.19,0.22,0.17,Under
