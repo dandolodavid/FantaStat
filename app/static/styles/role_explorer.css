@@ -47,8 +47,6 @@ body {
   position : center;
   margin-right: auto;
   margin-left: auto;
-  padding-left : 30px;
-  padding-right : 30px;
   padding-top: 10px;
   width:auto;
   border-radius: 10px;
@@ -58,7 +56,7 @@ body {
   position: relative;
   z-index: 100;
   min-height: 80vh;
-  max-width: calc(100vw - 20vw);
+  max-width: calc(100vw - 5vw);
   min-width: 250px;
 }
 
@@ -116,7 +114,6 @@ thead tr:last-child td:last-child {
 
 
 .logo img {
-  padding: 10px;
   width: auto;
   height: auto;
   max-width: min(30px,100%);
@@ -125,7 +122,7 @@ thead tr:last-child td:last-child {
 
 .tableFixHead {
   overflow-y: auto;
-  height: 100px;
+  height: 100px;  
 }
 
 .tableFixHead thead th {
@@ -139,6 +136,7 @@ thead tr:last-child td:last-child {
   padding: 5px;
   overflow: hidden;
   height: 45px;
+  
 }
 
 tfoot{
@@ -157,3 +155,5 @@ tfoot tr:last-child td:first-child {
 tfoot tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
+
+ 

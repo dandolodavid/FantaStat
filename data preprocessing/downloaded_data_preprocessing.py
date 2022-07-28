@@ -112,3 +112,88 @@ def info_extraction(data, nome, stagione):
     info = np.round(info,2)
     
     return info, data
+
+
+def normalize(df):
+    
+    for c in df.columns:
+        df[c] = (df[c] - df[c].min()) /  (df[c].max() - df[c].min())
+    
+    return df
+
+def appetibility_index(history_original, dixon_coles, player_info):
+    '''
+    '''   
+    
+    ### score per vedere se segna contro squadre "semplici"
+    gestione_semplice_score = history_original.copy()
+    gestione_semplice_score.Squadra = gestione_semplice_score.Squadra.apply(lambda x: x.upper()[0:3])
+    
+    gestione_semplice_score['Against'] = gestione_semplice_score.apply(lambda x: x['Partita'].replace('-','').replace(x['Squadra'],''), axis = 1)
+    gestione_semplice_score.Against = gestione_semplice_score.Against.apply(lambda x: x.strip())
+
+    gestione_semplice_score = gestione_semplice_score[['Nome','Squadra','Against','Gf']].merge(dixon_coles, left_on = 'Squadra', right_on='name').drop(columns = 'name').rename(columns={'Atk_Params':'player_atk_params','Def_Params':'player_def_params'})
+    gestione_semplice_score = gestione_semplice_score.merge(dixon_coles, left_on = 'Against', right_on='name').drop(columns = 'name').rename(columns={'Atk_Params':'against_atk_params','Def_Params':'against_def_params'})
+    gestione_semplice_score = gestione_semplice_score.drop_duplicates()
+    
+    # segnare contro una squadra con difesa scarsa è meglio
+    easy_gambe_bonus = (-gestione_semplice_score['against_def_params'])*(gestione_semplice_score['Gf']>0)
+    easy_gambe_bonus = (easy_gambe_bonus - easy_gambe_bonus.min())/(easy_gambe_bonus.max() - easy_gambe_bonus.min())
+    gestione_semplice_score['easy_gambe_bonus'] = easy_gambe_bonus
+    easy_gambe_bonus = gestione_semplice_score.groupby('Nome').mean()[['easy_gambe_bonus']]
+    propensity_bonus_easy_game = easy_gambe_bonus.sort_values('easy_gambe_bonus',ascending=False)
+    
+    ### score propensità al cartellino giallo, rosso, avere bonus e avere voto
+    bonus_malus_voto_propensity = history_original.groupby('Nome')[['Amm','Esp','ha_bonus','ha_voto']].mean()
+    bonus_malus_voto_propensity = normalize(bonus_malus_voto_propensity)
+    
+    ### infortunio propensity
+    infortunio_propensity = history_original.groupby(['Nome','Status']).count().reset_index()
+    infortunio_propensity = infortunio_propensity.loc[infortunio_propensity.Status=='Infortunato'].set_index('Nome').rename(columns={'Giornata':'Infortunato'})[['Infortunato']]
+    infortunio_propensity = normalize(infortunio_propensity)
+    
+    ### gol subito propensity
+    ha_gol_subito = history_original[['Nome','Gs']]
+    ha_gol_subito['Gs'] = (ha_gol_subito['Gs']>0)
+    ha_gol_subito = ha_gol_subito.groupby('Nome').mean()[['Gs']]
+    
+    
+    propensity_df = pd.concat([propensity_bonus_easy_game, bonus_malus_voto_propensity, infortunio_propensity, ha_gol_subito],axis=1)
+    propensity_df['Infortunato'] = propensity_df['Infortunato'].fillna(0)
+
+
+    propensity_df = propensity_df.merge(player_info[['Nome','Ruolo']], left_index = True, right_on='Nome')
+    
+    for bad_propensity in ['Infortunato','Esp','Amm','Gs']:
+        propensity_df[bad_propensity] = 1-propensity_df[bad_propensity] 
+
+    appetibility_index = []
+    for idx,row in propensity_df.iterrows():
+        if row['Ruolo'] == 'P':
+            if row['ha_voto'] > 0:
+                appetibility_index.append( { 'Ruolo':row['Ruolo'], 'Nome': row['Nome'] ,'appetibility':0.4 * row['Gs'] + 0.6 * row['ha_voto'] })
+            else:
+                appetibility_index.append( { 'Ruolo':row['Ruolo'], 'Nome': row['Nome'] ,'appetibility':0 } )
+                
+        if row['Ruolo'] == 'D':
+            if row['ha_voto'] > 0:
+                appetibility_index.append( { 'Ruolo':row['Ruolo'], 'Nome': row['Nome'] ,'appetibility': 0.15 * row['Amm'] + 0.1 * row['Esp'] + 0.35 * row['ha_bonus'] + 0.35 * row['ha_voto']  })
+            else:
+                appetibility_index.append( { 'Ruolo':row['Ruolo'], 'Nome': row['Nome'] ,'appetibility':0 } )
+                
+        if row['Ruolo'] == 'C':
+            if row['ha_voto'] > 0:
+                appetibility_index.append( { 'Ruolo':row['Ruolo'], 'Nome': row['Nome'] ,'appetibility': 0.15 * row['Amm'] + 0.5 * row['ha_bonus'] + 0.35 * row['ha_voto']  })
+            else:
+                appetibility_index.append( { 'Ruolo':row['Ruolo'], 'Nome': row['Nome'] ,'appetibility':0 } )
+                
+        if row['Ruolo'] == 'A':
+            if row['ha_voto'] > 0:
+                appetibility_index.append( { 'Ruolo':row['Ruolo'], 'Nome': row['Nome'] ,'appetibility': 0.2 * row['easy_gambe_bonus'] + 0.4 * row['ha_bonus'] + 0.4 * row['ha_voto']  })
+            else:
+                appetibility_index.append( { 'Ruolo':row['Ruolo'], 'Nome': row['Nome'] ,'appetibility':0 } )
+
+
+    appettiblity = pd.DataFrame(appetibility_index)
+    
+    return propensity_df, appetibility_index

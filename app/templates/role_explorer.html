@@ -21,6 +21,7 @@
     </header>    
     
     <div class = "filter_selection">
+        
         <div class='grid_item'>
             Seleziona ruolo:
             <form action= "{{ url_for('handle_filter') }}" method="POST">
@@ -30,16 +31,27 @@
                     {% endfor %}
                 </select>
             </div>
-        <div class='grid_item'>
+        
+            <div class='grid_item'>
             Seleziona minimo presenze<br>
                 <select name ='min_pres'>
                     {% for min_pres in [0,5,10,20,25,30] %}
                     <option value= "{{min_pres}}">{{min_pres}}</option>"
                     {% endfor %}
                 </select>
-        
         </div>
-        <div class='grid_item'> <button type="submit" class="btn btn-default">Seleziona</button></div>   
+
+        
+        <div class='grid_item'>
+            Seleziona Squadra<br>
+                <select name ='team_selected'>
+                    {% for nome_squadra in [' '] + all_teams %}
+                    <option value= "{{nome_squadra}}">{{nome_squadra}}</option>"
+                    {% endfor %}
+                </select>
+        </div>
+
+        <div class='grid_item'> <br> <button type="submit" class="btn btn-default">Seleziona</button></div>   
 
         </form>
          
@@ -47,11 +59,27 @@
 
     <div class='main_content'>
         <table class="sortable tabella tableFixHead">
+
             <thead class = 'table_header'>
+                <!--<tr>
+                    <th></th>
+                    {% for i in range(0,first_level_header_name|length)%}
+                    <th colspan="{{first_level_header_size[i]}}"> {{first_level_header_name[i] }}</th>
+                    {% endfor %}
+                </tr>-->
                 <tr>
                     <th></th>
                     {% for col_name in table.columns[1:]%}
-                    <th> {{col_name.replace('_',' ')}}</th>
+                    <th> 
+                    
+                    {% if col_name.replace(' ','_').lower() + '.png' in images_existing %}
+                        <img src={{ url_for('static',filename='img/' + col_name.replace(' ','_').lower() + '.png') }} title="{{col_name}}" width="30" height="30">
+                    {% else %}
+                        {{col_name}}
+                    {% endif %}
+
+                    
+                    </th>
                     {% endfor %}
                 </tr>
             </thead>
@@ -59,7 +87,7 @@
             <tbody aria-live = 'polite' aria-relevant = 'all'>
                 {% for idx,row in table.iterrows() %}
                     <tr class = 'row_role'>
-                    <th class='row_cell'><div class = 'logo-img'><img src={{row[0]}} alt="Campioncino Fantacalcio.it" width="70" height="80"></div></th>
+                    <th class='row_cell'><div class = 'logo-img'><img src={{row[0]}} title="Campioncino Fantacalcio.it" width="60" height="80"></div></th>
                     {% for col in row[1:]%}
                         <th class='row_cell'>{{col}}</th>
                     {% endfor %}
