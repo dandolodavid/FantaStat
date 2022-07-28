@@ -4,31 +4,39 @@
 <title>{{nome}} Analisi giocatore</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/player_page_css.css') }}"></head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/general.css') }}"></head>
 <body>    
-<header>
-        <div class="navbar_menu">
-            
-            <h3>FantaStat</h3>
-            <ul>
-                <li class = 'sidebar-item'><a href="/classifica">Info squadre</a></li>
-                <li class = 'sidebar-item'><a href="/role-explorer">Info ruolo</a></li>
-                <li class = 'sidebar-item'><a href="/player-page">Info giocatore</a></li>
-                <li class = 'sidebar-item'><a href="#">La tua squadra</a></li>
-            </ul>
+    <header>
+            <div class="navbar_menu">
+                <div class = 'logo_container'>
+                    <img src = 'static/img/logo.png' class = 'logo'>
+                </div>
+                <div class = 'navbar_container'>
+                    <ul>
+                        <li class = 'navbar-item'><a href="/classifica">Info squadre</a></li>
+                        <li class = 'navbar-item'><a href="/role-explorer">Info ruolo</a></li>
+                        <li class = 'navbar-item'><a href="/player-page">Info giocatore</a></li>
+                        <li class = 'navbar-item'><a href="/team-builder">Team Builder</a></li>
+                    </ul>
+                </div>
+                <div class = 'navbar_this_page'>
+                    <ul>
+                        <li class = 'navbar-item'><a href="#player_meta_grid">Riepilogo giocatore</a></li>
+                        <li class = 'navbar-item'><a href="#presenze_meta_grid">Presenze</a></li>
+                        <li class = 'navbar-item'><a href="#statistiche_meta_grid">Statistiche</a></li>
+                        <li class = 'navbar-item'><a href="#bonus_malus_meta_grid">Bonus/Malus</a></li>
+                        <li class = 'navbar-item'><a href="#div-history_plot">History plot</a></li>
+                        <li class = 'navbar-item'><a href="#div-bonus_plot">History plot</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
 
-            <h3>Questa pagina:</h3>
-            <ul>
-                <li class = 'sidebar-item'><a href="#player_meta_grid">Riepilogo giocatore</a></li>
-                <li class = 'sidebar-item'><a href="#presenze_meta_grid">Presenze</a></li>
-                <li class = 'sidebar-item'><a href="#statistiche_meta_grid">Statistiche</a></li>
-                <li class = 'sidebar-item'><a href="#bonus_malus_meta_grid">Bonus/Malus</a></li>
-                <li class = 'sidebar-item'><a href="#div-history_plot">History plot</a></li>
-                <li class = 'sidebar-item'><a href="#div-bonus_plot">History plot</a></li>
-            </ul>
+            
 
         </div>
 
-        <div class = "player_selection">
+        <div class = "dropdown_filter_box">
             Seleziona giocatore:
             <form action= "{{ url_for('handle_name') }}" method="POST">
                 <select name ='nome_selezionato'>

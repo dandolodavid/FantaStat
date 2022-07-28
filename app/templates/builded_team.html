@@ -3,49 +3,113 @@
 <head>
 <title>{{nome}} Team Builder </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/classifica_page.css') }}"></head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/builded_team.css') }}"></head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/general.css') }}"></head>
 <body>    
     <header>
             <div class="navbar_menu">
-                
-                <h3>FantaStat</h3>
-                <ul>
-                    <li class = 'sidebar-item'><a href="/classifica">Info squadre</a></li>
-                    <li class = 'sidebar-item'><a href="/role-explorer">Info ruolo</a></li>
-                    <li class = 'sidebar-item'><a href="/player-page">Info giocatore</a></li>
-                    <li class = 'sidebar-item'><a href="#/team-builder">Team Builder</a></li>
-                </ul>
-
+                <div class = 'logo_container'>
+                    <img src = 'static/img/logo.png' class = 'logo'>
+                </div>
+                <div class = 'navbar_container'>
+                    <ul>
+                        <li class = 'navbar-item'><a href="/classifica">Info squadre</a></li>
+                        <li class = 'navbar-item'><a href="/role-explorer">Info ruolo</a></li>
+                        <li class = 'navbar-item'><a href="/player-page">Info giocatore</a></li>
+                        <li class = 'navbar-item'><a href="/team-builder">Team Builder</a></li>
+                    </ul>
+                </div>
             </div>
     </header>
 
     <div class = 'main_content'>
-        
-        <table class="sortable tabella table">
-            <thead>
-                <tr>
-                    {% for col_name in table.columns%}
-                    <th> {{col_name}}</th>
-                    {% endfor %}
-                </tr>
-            </thead>
+        <div class = 'two_block_grid'>
             
-        <tbody aria-live = 'polite' aria-relevant = 'all'>
+            <div class = 'main_content_grid_item'>
+                <div class = 'campetto'>
+                    <div class = "formazione">
+                        <div class="{{att_class}}">
+                            {% for i in range(0,img_att|length)%}
+                            <div class = 'grid_item_att'>
+                                <img src="{{ img_att[i] }}" title="{{nomi_att[i]}}" class="campioncino">
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="{{cen_class}}">
+                            {% for i in range(0,img_cen|length)%}
+                            <div class = 'grid_item_cen'>
+                                <img src="{{ img_cen[i] }}" title="{{nomi_cen[i]}}" class="campioncino">
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="{{dif_class}}">
+                            {% for i in range(0,img_dif|length)%}
+                            <div class = 'grid_item_dif'>
+                                <img src="{{ img_dif[i] }}" title="{{nomi_dif[i]}}" class="campioncino">
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <div class='grid_item_por'>
+                            <img src="{{ img_por }}" title="{{nomi_por}}" height="250" class="campioncino">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+            <div class = 'main_content_grid_item_stat'>
+                <div class = 'grid_item_two_rows'>
+                    <div class = 'grid_item_vertical'>
+                        <table class="sortable tabella table">
+                            <thead>
+                                <tr>
+                                    {% for col_name in table.columns%}
+                                    <th> {{col_name}}</th>
+                                    {% endfor %}
+                                </tr>
+                            </thead>
+                            <tbody aria-live = 'polite' aria-relevant = 'all'>
+                                
+                                {% for idx,row in table.iterrows() %}
+
+                                <tr class = 'row_team_builded'>
+                                    {% for col in row%}
+                                        <th>{{col}}</th>
+                                    {% endfor %}
+
+                                </tr>   
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class = 'grid_item_vertical_stat'>
+                            <div class = 'total_stat'>Bonus totali: <br><h3>{{bonus_total}}</h3></div>
+                            <div class = 'total_stat'>Malus totali <br><h3>{{malus_total}}</h3></div>
+                            <div class = 'total_stat'>Media punti: <br><h3>{{mean_pt}}</h3></div>
+                    </div>
+                    <div class = 'grid_item_vertical'>
+                        *Al momento il team builder non prevede l'uso della panchina, quando un giocatore è SV il sistema assegna un 6 per la stima dei punti a giornata
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class = 'plot_section'>
+        <h2 class='section_title'>Plot</h2>
+            <div class='div-history_punti' id='div-history_punti'>
+                {{fig_history_punti_giornata|safe}}
+            </div>
+            <div class='div-history_fantavoto' id='div-history_fantavoto'>
+                {{fig_history_fantavoto|safe}}
+            </div>
+            <div class='div-history_voto'id='div-history_voto' >
+                {{fig_history_voto|safe}}
+            </div>
             
-            {% for idx,row in table.iterrows() %}
-
-            <tr class = 'row_classifica'>
-                {% for col in row%}
-                    <th>{{col}}</th>
-                {% endfor %}
-
-            </tr>   
-            {% endfor %}
-        </tbody>
-
-    </table>
-
+        </div>
     </div>
-       
 </body>
 </html>    

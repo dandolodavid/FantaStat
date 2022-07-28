@@ -1,0 +1,197 @@
+.main_content{
+  display: grid;
+  margin-right: auto;
+  margin-left: auto;
+  width:auto;
+  margin-top: 40px;
+  margin-bottom: -10px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 100;
+  min-height: 80vh;
+  max-width: calc(100vw - 20vw);
+  min-width: 250px;
+}
+
+.two_block_grid{
+    grid-template-columns: auto auto;
+    display: grid;
+}
+
+.main_content_grid_item{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.grid_item_vertical_stat{
+  grid-template-columns: auto auto auto;
+  display: grid;
+  margin-top: 50px;
+  padding: 15px;
+  background-color: #f77047;
+  border-radius: 15px;
+  color: 'white';
+}
+
+
+.total_stat {
+  padding: 5px;
+  font-size: 16;
+  text-align: center;
+}
+
+.h1{
+  font-size: 45px;
+}
+
+
+.h2{
+  font-size: 30px;
+}
+
+
+.h3{
+  font-size: 25px;
+}
+
+/*CAMPETTO*/
+
+.formazione{
+    padding-top: 30px;
+}
+
+.campetto{
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 520px;
+    width: 560px;
+    background-image: url(../img/campetto.png);
+    border-radius: 25px;
+    background-size: cover;
+}
+
+
+.dif_3{
+    grid-template-columns: auto auto auto;
+    display: grid;
+}
+.dif_4{
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+}
+.dif_5{
+    grid-template-columns: auto auto auto auto auto;
+    display: grid;
+}
+
+
+.cen_3{
+    grid-template-columns: auto auto auto;
+    display: grid;
+}
+.cen_4{
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+}
+.cen_5{
+    grid-template-columns: auto auto auto auto auto;
+    display: grid;
+}
+
+
+.att_2{
+    grid-template-columns: auto auto;
+    display: grid;
+}
+.att_3{
+    grid-template-columns: auto auto auto;
+    display: grid;
+}
+.att_1{
+    grid-template-columns: auto;
+    display: grid;
+}
+
+.grid_item_por {
+    text-align: center;
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-attachment: fixed;
+  }
+
+.grid_item_dif {
+    text-align: center;
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-attachment: fixed;
+  }
+
+.grid_item_cen {
+    text-align: center;
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-attachment: fixed;
+  }
+
+.grid_item_att {
+    text-align: center;
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-attachment: fixed;
+  }
+
+.campioncino{
+    height: 120px;
+}
+
+/*TABELLA*/
+
+thead {
+    background-color:rgba(244, 11, 11, 0.729);
+    color:#000000;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: default;
+    padding: 5px;
+    border-radius: 1em;
+    overflow: hidden;
+    height: 45px;
+  }
+  
+  .tabella {
+    border-collapse: collapse;
+    padding: 5px;
+    width: 100%;
+    border-radius: 30px;
+  
+  }
+  
+  /* top-left border-radius */
+  thead tr:first-child th:first-child {
+    border-top-left-radius: 20px;
+  }
+  
+  /* top-right border-radius */
+  thead tr:first-child th:last-child {
+    border-top-right-radius: 20px;
+  }
+  
+  /* bottom-left border-radius */
+  thead tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+  }
+  
+  /* bottom-right border-radius */
+  thead tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+  }
+  
+  .row_team_builded{
+    height: 30px;
+    padding: 3em;
+    background: rgba(2, 154, 242, 0.36);
+    border-bottom: 2px solid;
+    border-color:  rgba(13, 13, 13, 0.452) ;
+  }

@@ -13,14 +13,6 @@ body {
   font-family: "Helvetica";
 }
 
-.filter_selection{
-  border-radius: 12px;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  background-color: #0830f790;
-  padding: 20px;
-  margin:5px;
-}
 
 .grid_item {
   padding: 5px;

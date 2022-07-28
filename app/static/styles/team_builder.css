@@ -1,36 +1,3 @@
-header {
-    padding:5px;
-}
-
-.player_selection {
-  border-radius: 12px;
-  background-color: #7c62ed;
-  padding: 10px;
-}
-
-body {
-    background-color: #f2f2f2;
-    font-family: "Helvetica";
-}
-
-.navbar_menu{
-    background-color: #c8d8e4;
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-.sidebar-item {
-    font-size:15;
-    padding:10px;
-    display: inline;
-}
-
-.sidebar-item a:hover {
-  background-color: rgb(236, 12, 12);
-}
 
 .main_content{
     position : center;
@@ -49,23 +16,6 @@ body {
     max-width: calc(100vw - 50vw);
     min-width: 300px;
 }
-
-.section_title{
-    padding:10px;
-    border-radius: 12px;
-    background-color: #c8d8e4;
-}
-
-.campetto{
-    background-image: url('https://mh-1-agenzia-di-stock.panthermedia.net/media/media_detail/0011000000/11650000/~verde-campo-di-calcio--_11650734_detail.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 0;
-    padding-top: 66.64%;
-
-}
-
 
 .dif_3{
     grid-template-columns: auto auto auto;
@@ -113,6 +63,7 @@ body {
     border: 2px solid;
     border-radius: 12px;
     border-color:#f4b247 ;
+    background-color:#f8ac3388;
     padding: 5px;
     font-size: 16;
     text-align: center;
@@ -122,6 +73,7 @@ body {
     border: 2px solid;
     border-radius: 12px;
     border-color:#daf209 ;
+    background-color:#dbf20983 ;
     padding: 5px;
     font-size: 16;
     text-align: center;
@@ -131,6 +83,7 @@ body {
     border: 2px solid;
     border-radius: 12px;
     border-color:#291fee ;
+    background-color:#291fee70 ;
     padding: 5px;
     font-size: 16;
     text-align: center;
@@ -140,6 +93,7 @@ body {
     border: 2px solid;
     border-radius: 12px;
     border-color:#ee0a0a ;
+    background-color:#ee0a0a6b ;
     padding: 5px;
     font-size: 16;
     text-align: center;
@@ -148,4 +102,24 @@ body {
 .grid_item_sent{
     padding: 15px;
     text-align: center;
+}
+
+
+.team_builder{
+
+    font-size: 15px;
+    border-radius: 12px;
+    background-color: #1717194e;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.selector{
+    height: 40px;
+    font-size: 20px;
+    font-family: Helvetica, Sans-Serif;
+    background-color: #dadaf5;
 }

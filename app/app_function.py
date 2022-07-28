@@ -1,11 +1,10 @@
-from bdb import set_trace
 import plotly.express as px
 import pandas as pd
 import numpy as np
 from os import listdir
 from os.path import isfile, join
-
 from flask import Flask, render_template,request, redirect, url_for
+from team_builder import build_team
 
 def map_features_role_exploration():
     
@@ -109,7 +108,6 @@ def get_features(role):
 
 def cast_to_int_features():
     return ['Amm','Esp','Rs','Rc','Tit','Ent','Rp','Rs','P','Gs','A','G']
-
 
 def get_images(cols):
     img_dict = {}
@@ -228,3 +226,62 @@ def view_player_page(player_info, player_hist, all_names, nome):
                                                perc_v_8 = data['%_voto_>_8'],        
                                                history_plot = plot_history,
                                                bonus_plot = plot_bonus)
+    
+def view_team_builder(player_info,modulo_scelto):
+    '''
+    '''
+    grid_list = modulo_scelto.split('-')
+    dif_class = 'dif_'+grid_list[0]
+    cen_class = 'cen_'+grid_list[1]
+    att_class = 'att_'+grid_list[2]
+
+    n_dif = int(grid_list[0])
+    n_cen = int(grid_list[1])
+    n_att = int(grid_list[2])
+
+    nomi_dif = ['nome_' + str(2+i) for i in range(0,n_dif)]
+    nomi_cen = ['nome_' + str(n_dif+2+i) for i in range(0,n_cen)]
+    nomi_att = ['nome_' + str(n_dif+n_cen+2+i) for i in range(0,n_att)]
+
+    por_names = player_info.loc[player_info.Ruolo == 'P'].Nome.unique()
+    dif_names = player_info.loc[player_info.Ruolo == 'D'].Nome.unique()
+    cen_names = player_info.loc[player_info.Ruolo == 'C'].Nome.unique()
+    att_names = player_info.loc[player_info.Ruolo == 'A'].Nome.unique()
+
+    return render_template( 'team_builder.html',  modulo_scelto = modulo_scelto,
+                           por_names = por_names, dif_names = dif_names, cen_names = cen_names, att_names = att_names, 
+                           dif_class=dif_class, cen_class=cen_class, att_class=att_class,
+                           n_dif = n_dif,n_cen = n_cen,n_att = n_att,
+                           nomi_dif= nomi_dif,
+                           nomi_cen = nomi_cen,
+                           nomi_att = nomi_att
+                          )
+    
+def view_builded_team(team_list, player_info, player_hist):
+    
+    team_df, table, mean_pt, bonus_total, malus_total, fig_history_voto, fig_history_fantavoto, fig_history_punti_giornata = build_team(team_list, player_info, player_hist)
+    
+    counts_role = team_df.Ruolo.value_counts()
+    
+    nome_por = team_df.loc[team_df.Ruolo == 'P'].Nome.unique()[0]
+    nomi_dif = team_df.loc[team_df.Ruolo == 'D'].Nome.unique()
+    nomi_cen = team_df.loc[team_df.Ruolo == 'C'].Nome.unique()
+    nomi_att = team_df.loc[team_df.Ruolo == 'A'].Nome.unique()
+    
+    img_por = team_df.loc[team_df.Ruolo == 'P'].img.unique()[0]
+    img_dif = team_df.loc[team_df.Ruolo == 'D'].img.unique()
+    img_cen = team_df.loc[team_df.Ruolo == 'C'].img.unique()
+    img_att = team_df.loc[team_df.Ruolo == 'A'].img.unique()
+    
+    
+    dif_class = 'dif_'+ str(counts_role.loc['D'])
+    cen_class = 'cen_'+ str(counts_role.loc['C'])
+    att_class = 'att_'+ str(counts_role.loc['A'])
+    
+    
+    return render_template( 'builded_team.html', table = table, 
+                        dif_class = dif_class, cen_class = cen_class, att_class = att_class,
+                        img_por = img_por,img_dif = img_dif,img_cen = img_cen,img_att = img_att,
+                        nome_por = nome_por, nomi_dif = nomi_dif, nomi_cen = nomi_cen, nomi_att = nomi_att,
+                        mean_pt = mean_pt, bonus_total = bonus_total, malus_total = malus_total, 
+                        fig_history_voto = fig_history_voto, fig_history_fantavoto = fig_history_fantavoto,  fig_history_punti_giornata = fig_history_punti_giornata )

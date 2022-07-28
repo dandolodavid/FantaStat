@@ -1,37 +1,3 @@
-header {
-    padding:5px;
-}
-
-.player_selection {
-  border-radius: 12px;
-  background-color: #7c62ed;
-  padding: 10px;
-}
-
-body {
-    background-color: #f2f2f2;
-    font-family: "Helvetica";
-}
-
-.navbar_menu{
-    background-color: #c8d8e4;
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-.sidebar-item {
-    font-size:15;
-    padding:10px;
-    display: inline;
-}
-
-.sidebar-item a:hover {
-  background-color: rgb(236, 12, 12);
-}
-
 .main_content{
     position : center;
     margin-right: auto;
