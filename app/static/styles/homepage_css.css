@@ -1,0 +1,21 @@
+.homepage_content{
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100vw - 40vw);
+}
+
+
+.li_homepage{
+    display: inline-block;
+}
+
+.li_container{
+    margin: 25px;
+    padding: 25px;
+}
+
+.homepage_content img{
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+}

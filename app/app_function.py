@@ -118,19 +118,33 @@ def get_images(cols):
 
 ### VIEW FUNCTION
 
-def view_role_explorer(player_info, all_teams, role = 'P', filter_presence = 0, team_selected = ' ' ):
+def view_role_explorer(player_info, all_teams, fav_file = None, role = 'P', filter_presence = 0, team_selected = ' ', show_fav = True, show_not_fav = True):
+    
+    #carichiamo i preferiti
+    names_favourite = fav_file.read().splitlines()
+    if '' in names_favourite: 
+        names_favourite.remove('')
+    fav_file.close()
     
     # applichiamo i filtri
-    
     ## ruolo
-    role_table = player_info.loc[player_info.Ruolo == role]
+    filtered_table = player_info.loc[player_info.Ruolo == role]
     ## presenza
-    role_table = role_table.loc[role_table.Presenza.fillna(0).astype(int)>int(filter_presence)]
+    filtered_table = filtered_table.loc[filtered_table.Presenza.fillna(0).astype(int)>int(filter_presence)]
     ## squadra
     if team_selected!= ' ':
-        role_table = role_table.loc[role_table.Squadra == team_selected]
+        filtered_table = filtered_table.loc[filtered_table.Squadra == team_selected]
+    ## vedere preferiti/non preferiti
+    names_not_favourite = list(np.setdiff1d( filtered_table.Nome.unique(), names_favourite ))
+    names_to_return = []
+    if show_fav:
+        names_to_return = names_to_return + names_favourite
+    if show_not_fav:
+        names_to_return = names_to_return + names_not_favourite
+
+    filtered_table = filtered_table.loc[filtered_table.Nome.isin(names_to_return)]
        
-    table = role_table[get_features(role)] 
+    table = filtered_table[get_features(role)] 
     
     first_level_header = get_first_header(role)
     first_level_header_name = first_level_header[0] 
@@ -143,12 +157,14 @@ def view_role_explorer(player_info, all_teams, role = 'P', filter_presence = 0, 
     table = table.rename(columns = map_features_role_exploration())
        
     all_images = [f for f in listdir('static/img') if isfile(join('static/img', f))]
-    
-    return render_template( 'role_explorer.html', images_existing = all_images,
+
+    return render_template( 'role_explorer.html', 
+                           images_existing = all_images, fav_names = names_favourite,
                            first_level_header_name = first_level_header_name,
                            first_level_header_size = first_level_header_size,
                            all_teams = all_teams, 
-                           table = table)
+                           table = table,
+                           show_fav = show_fav, show_not_fav = show_not_fav )
 
 def view_classifica(classifica):
     return render_template( 'classifica.html',  table =  classifica )

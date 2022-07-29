@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home page</title>
-</head>
-<body class="w3-light-grey">
-    <ul>
-    <li><a href="/player-page"> Giocatore </a></li>
-    <li><a href="/classifica"> Classifica </a></li>
-    <li><a href="/role-explorer"> Esplora Ruoli </a></li>
-    <li><a href="/team-builder"> Team Builder </a></li>
-    </ul>
+<title>{{nome}} Homepage </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/homepage_css.css') }}">
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/general.css') }}"></head>
+<body>    
+    <header>
+            <div class="navbar_menu">
+                <div class = 'logo_container'>
+                    <img src = 'static/img/logo.png' class = 'logo'>
+                </div>
+                <div class = 'navbar_container'>
+                    <ul>
+                        <li class = 'navbar-item'><a href="/classifica">Info squadre</a></li>
+                        <li class = 'navbar-item'><a href="/role-explorer">Info ruolo</a></li>
+                        <li class = 'navbar-item'><a href="/player-page">Info giocatore</a></li>
+                        <li class = 'navbar-item'><a href="/team-builder">Team Builder</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>   
+
+    <div class='homepage_content'>
+        <ul class = 'homepage_ul'>
+        <li  class = 'li_homepage player_page'><div class = 'link_container'><a href="/player-page"><img src="{{ url_for('static',filename='img/player_page.PNG') }}"> </a></div></li>
+        <li  class = 'li_homepage team_builder'><div class = 'link_container'><a href="/team-builder"><img src="{{ url_for('static',filename='img/team_builder.PNG') }}"> </a></div></li>
+        <li  class = 'li_homepage classifica'><div class = 'link_container'><a href="/classifica"><img src="{{ url_for('static',filename='img/classifica.PNG') }}"> </a></div></li>
+        <li  class = 'li_homepage role_explorer'><div class = 'link_container'><a href="/role-explorer"><img src="{{ url_for('static',filename='img/role_explorer.PNG') }}"> </a></div></li>
+        </ul>
+    </div>
+
 </body>

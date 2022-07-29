@@ -27,7 +27,7 @@
         
         <div class='grid_item'>
             Seleziona ruolo:
-            <form action= "{{ url_for('handle_filter') }}" method="POST">
+            <form action= "{{ url_for('handle_role_explorer') }}" method="POST">
                 <select name ='role_selected'>
                     {% for role in ['P','D','C','A'] %}
                         <option value= "{{role}}">{{role}}</option>"
@@ -54,6 +54,23 @@
                 </select>
         </div>
 
+        <div class='grid_item'>
+            
+            {% if show_fav %}
+                <input type="checkbox" id="fav" name="checked_fav" value="True" checked="True">
+            {% else %}
+                <input type="checkbox" id="fav" name="checked_fav" value="True">
+            {% endif %}
+            <label for="fav"> Preferiti </label><br>
+
+            {% if show_not_fav %}
+                <input type="checkbox" id="fav" name="checked_not_fav" value="True" checked="True">
+            {% else %}
+                <input type="checkbox" id="fav" name="checked_not_fav" value="True">
+            {% endif %}
+            <label for="not_fav"> Non preferiti</label><br>
+        </div>
+
         <div class='grid_item'> <br> <button type="submit" class="btn btn-default">Seleziona</button></div>   
 
         </form>
@@ -62,47 +79,49 @@
 
     <div class='main_content'>
         <table class="sortable tabella tableFixHead">
-
             <thead class = 'table_header'>
-                <!--<tr>
-                    <th></th>
-                    {% for i in range(0,first_level_header_name|length)%}
-                    <th colspan="{{first_level_header_size[i]}}"> {{first_level_header_name[i] }}</th>
-                    {% endfor %}
-                </tr>-->
                 <tr>
                     <th></th>
                     {% for col_name in table.columns[1:]%}
                     <th> 
-                    
                     {% if col_name.replace(' ','_').lower() + '.png' in images_existing %}
                         <img src={{ url_for('static',filename='img/' + col_name.replace(' ','_').lower() + '.png') }} title="{{col_name}}" width="30" height="30">
                     {% else %}
                         {{col_name}}
                     {% endif %}
-
-                    
                     </th>
                     {% endfor %}
                 </tr>
             </thead>
 
             <tbody aria-live = 'polite' aria-relevant = 'all'>
+                <form action= "{{ url_for('handle_role_explorer') }}" method="POST">
                 {% for idx,row in table.iterrows() %}
                     <tr class = 'row_role'>
-                    <th class='row_cell'><div class = 'logo-img'><img src={{row[0]}} title="Campioncino Fantacalcio.it" width="60" height="80"></div></th>
+                    <th class='row_cell'>
+                        <div class = 'logo-img'>
+                            {% if row.Nome in fav_names %}
+                            <button type="submit" name="add_to_fav" value="{{row.Nome}}" class='campioncino_button fav'><img src={{row[0]}} title="Clicca per rimuovere dai preferiti" class = 'campioncino'></button>
+                            {% else %}
+                            <button type="submit" name="add_to_fav" value="{{row.Nome}}" class='campioncino_button'><img src={{row[0]}} title="Clicca per aggiungere ai preferiti" class = 'campioncino'></button>
+                            {% endif %}
+                        </div>
+                    </th>
                     {% for col in row[1:]%}
                         <th class='row_cell'>{{col}}</th>
                     {% endfor %}
                 </tr>   
                 {% endfor %}
+                </form>
             </tbody>
+
             <tfoot>
                 {% for col_name in table.columns%}
                 <th> </th>
                 {% endfor %}
             </tfoot>
         </table>
+       
     </div>
 
 </body>

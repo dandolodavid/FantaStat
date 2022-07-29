@@ -148,4 +148,26 @@ tfoot tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
+.campioncino_button{
+  height: 100px;
+  width: 80px;
+  border:None;
+  background-color: transparent;
+}
+
+.campioncino{
+  height: 95px;
+  width: 70px;
+}
+
+.campioncino_button:hover{
+  background-color:rgba(244, 11, 11, 0.729);
+  cursor: pointer;
+  border-radius:5px;
+}
+
+.fav{
+  background-color:rgba(244, 11, 11, 0.729);
+  border-radius:5px;
+}
  
