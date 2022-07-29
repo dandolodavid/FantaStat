@@ -4,7 +4,6 @@
 <title>{{nome}} Confronta giocatori per ruolo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/role_explorer.css') }}">
-<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/general.css') }}"></head>
 <body>    
     <header>
@@ -30,7 +29,12 @@
             <form action= "{{ url_for('handle_role_explorer') }}" method="POST">
                 <select name ='role_selected'>
                     {% for role in ['P','D','C','A'] %}
-                        <option value= "{{role}}">{{role}}</option>"
+                        {% if role == actual_role %}
+                            <option selected="selected" value= "{{role}}">{{role}}</option>"
+                        {% else %}
+                            <option value = "{{role}}">{{role}}</option>"
+                        {% endif %}
+                        
                     {% endfor %}
                 </select>
             </div>
@@ -39,7 +43,11 @@
             Seleziona minimo presenze<br>
                 <select name ='min_pres'>
                     {% for min_pres in [0,5,10,20,25,30] %}
-                    <option value= "{{min_pres}}">{{min_pres}}</option>"
+                        {% if min_pres|int == actual_min_pres|int %}
+                            <option selected="selected" value= "{{min_pres}}">{{min_pres}}</option>"
+                        {% else %}
+                            <option value = "{{min_pres}}">{{min_pres}}</option>"
+                        {% endif %}
                     {% endfor %}
                 </select>
         </div>
@@ -48,11 +56,29 @@
         <div class='grid_item'>
             Seleziona Squadra<br>
                 <select name ='team_selected'>
-                    {% for nome_squadra in [' '] + all_teams %}
-                    <option value= "{{nome_squadra}}">{{nome_squadra}}</option>"
+                    {% for nome_squadra in ['Tutte'] + all_teams %}
+                        {% if nome_squadra == actual_team %}
+                            <option selected="selected" value= "{{nome_squadra}}">{{nome_squadra}}</option>"
+                        {% else %}
+                            <option value= "{{nome_squadra}}">{{nome_squadra}}</option>"
+                        {% endif %}
                     {% endfor %}
                 </select>
         </div>
+
+        <div class='grid_item'>
+            Seleziona slot<br>
+                <select name ='slot_asta'>
+                    {% for slot in ['Tutti','','SuperTop','Top','SemiTop','Titolare','Titolare Bonus','Regolarista','Underdog','Overdog','Jolly','Ghost','Ultimi slot','Scommessa','Non predenere','Non disponibile'] %}
+                        {% if slot == actual_slot %}
+                            <option selected="selected" value= "{{slot}}">{{slot}}</option>"
+                        {% else %}
+                            <option value= "{{slot}}">{{slot}}</option>"
+                        {% endif %}
+                    {% endfor %}
+                </select>
+        </div>
+
 
         <div class='grid_item'>
             
@@ -79,46 +105,61 @@
 
     <div class='main_content'>
         <table class="sortable tabella tableFixHead">
+            <form action= "{{ url_for('handle_role_explorer') }}" method="POST">
             <thead class = 'table_header'>
                 <tr>
                     <th></th>
-                    {% for col_name in table.columns[1:]%}
-                    <th> 
+                    {% for col_name in table.columns[1:-1]%}
+                    <th><button type="submit" name="sort" value="{{col_name}}" class='sort_button'>
                     {% if col_name.replace(' ','_').lower() + '.png' in images_existing %}
                         <img src={{ url_for('static',filename='img/' + col_name.replace(' ','_').lower() + '.png') }} title="{{col_name}}" width="30" height="30">
                     {% else %}
                         {{col_name}}
                     {% endif %}
+                    </button>
                     </th>
                     {% endfor %}
+                    <th>Slot asta</th>
                 </tr>
             </thead>
 
             <tbody aria-live = 'polite' aria-relevant = 'all'>
                 <form action= "{{ url_for('handle_role_explorer') }}" method="POST">
-                {% for idx,row in table.iterrows() %}
-                    <tr class = 'row_role'>
-                    <th class='row_cell'>
-                        <div class = 'logo-img'>
-                            {% if row.Nome in fav_names %}
-                            <button type="submit" name="add_to_fav" value="{{row.Nome}}" class='campioncino_button fav'><img src={{row[0]}} title="Clicca per rimuovere dai preferiti" class = 'campioncino'></button>
-                            {% else %}
-                            <button type="submit" name="add_to_fav" value="{{row.Nome}}" class='campioncino_button'><img src={{row[0]}} title="Clicca per aggiungere ai preferiti" class = 'campioncino'></button>
-                            {% endif %}
-                        </div>
-                    </th>
-                    {% for col in row[1:]%}
-                        <th class='row_cell'>{{col}}</th>
+                    {% for idx,row in table.iterrows() %}
+                        <tr class = 'row_role'>
+                        <th class='row_cell'>
+                            <div class = 'logo-img'>
+                                {% if row.Nome in fav_names %}
+                                <button type="submit" name="add_to_fav" value="{{row.Nome}}" class='campioncino_button fav'><img src={{row[0]}} title="Clicca per rimuovere dai preferiti" class = 'campioncino'></button>
+                                {% else %}
+                                <button type="submit" name="add_to_fav" value="{{row.Nome}}" class='campioncino_button'><img src={{row[0]}} title="Clicca per aggiungere ai preferiti" class = 'campioncino'></button>
+                                {% endif %}
+                            </div>
+                        </th>
+                        {% for col in row[1:-1]%}
+                            <th class='row_cell'>{{col}}</th>
+                        {% endfor %}
+                        <th class='row_cell'>
+                            <select name ='slot_selector' onchange="this.form.submit()">
+                                {% for slot in ['Tutti','','SuperTop','Top','SemiTop','Titolare','Titolare Bonus','Regolarista','Underdog','Overdog','Jolly','Ghost','Ultimi slot','Scommessa','Non predenere','Non disponibile'] %}
+                                    {% if slot == row.Slot %}
+                                        <option  selected="selected" value= "{{ row.Nome + ' + ' + slot }}">{{slot}}</option>
+                                    {% else %}
+                                        <option  value= "{{ row.Nome + ' + ' + slot }}">{{slot}}</option>
+                                    {% endif %}
+                                {% endfor %}
+                            </select> <noscript><input type="submit" value="Submit"></noscript>
+                        </th>
+                        </tr>  
                     {% endfor %}
-                </tr>   
-                {% endfor %}
                 </form>
             </tbody>
 
             <tfoot>
                 {% for col_name in table.columns%}
-                <th> </th>
+                    <th></th>
                 {% endfor %}
+                <th></th>
             </tfoot>
         </table>
        

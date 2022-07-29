@@ -13,7 +13,7 @@
     position: relative;
     z-index: 100;
     min-height: 80vh;
-    max-width: calc(100vw - 50vw);
+    max-width: calc(100vw - 20vw);
     min-width: 300px;
 }
 
@@ -63,40 +63,40 @@
     border: 2px solid;
     border-radius: 12px;
     border-color:#f4b247 ;
-    background-color:#f8ac3388;
     padding: 5px;
-    font-size: 16;
+    font-size: 16px;
     text-align: center;
+    height: 30px;
   }
 
 .grid_item_dif {
     border: 2px solid;
     border-radius: 12px;
     border-color:#daf209 ;
-    background-color:#dbf20983 ;
     padding: 5px;
-    font-size: 16;
+    font-size: 16px;
     text-align: center;
+    height: 30px;
   }
 
 .grid_item_cen {
     border: 2px solid;
     border-radius: 12px;
     border-color:#291fee ;
-    background-color:#291fee70 ;
     padding: 5px;
-    font-size: 16;
+    font-size: 16px;
     text-align: center;
+    height: 30px;
   }
 
 .grid_item_att {
     border: 2px solid;
     border-radius: 12px;
     border-color:#ee0a0a ;
-    background-color:#ee0a0a6b ;
     padding: 5px;
-    font-size: 16;
+    font-size: 16px;
     text-align: center;
+    height: 30px;
   }
 
 .grid_item_sent{
@@ -122,4 +122,10 @@
     font-size: 20px;
     font-family: Helvetica, Sans-Serif;
     background-color: #dadaf5;
+}
+
+select{
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
 }

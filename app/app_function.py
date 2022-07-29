@@ -1,10 +1,12 @@
+from turtle import left, right
 import plotly.express as px
 import pandas as pd
 import numpy as np
 from os import listdir
 from os.path import isfile, join
 from flask import Flask, render_template,request, redirect, url_for
-from team_builder import build_team
+from utils_function import build_team
+import os.path
 
 def map_features_role_exploration():
     
@@ -118,8 +120,16 @@ def get_images(cols):
 
 ### VIEW FUNCTION
 
-def view_role_explorer(player_info, all_teams, fav_file = None, role = 'P', filter_presence = 0, team_selected = ' ', show_fav = True, show_not_fav = True):
+def view_role_explorer(player_info, all_teams, fav_file = None, role = 'P', filter_presence = 0, team_selected = 'Tutte', slot = 'Tutti', show_fav = True, show_not_fav = True, sort_by = [None,None]):
     
+    #carichiamo lo slot
+    if os.path.exists('../tmp/slot_df.csv'):
+        slot_df = pd.read_csv('../tmp/slot_df.csv',index_col=[0])
+        player_info = player_info.merge(slot_df, left_on='Nome', right_on='Nome', how='left')
+        player_info['Slot'] = player_info['Slot'].fillna('')
+    else:
+        player_info['Slot'] = ''
+        
     #carichiamo i preferiti
     names_favourite = fav_file.read().splitlines()
     if '' in names_favourite: 
@@ -132,8 +142,10 @@ def view_role_explorer(player_info, all_teams, fav_file = None, role = 'P', filt
     ## presenza
     filtered_table = filtered_table.loc[filtered_table.Presenza.fillna(0).astype(int)>int(filter_presence)]
     ## squadra
-    if team_selected!= ' ':
+    if team_selected!= 'Tutte':
         filtered_table = filtered_table.loc[filtered_table.Squadra == team_selected]
+    if slot!= 'Tutti':
+        filtered_table = filtered_table.loc[filtered_table.Slot == slot]
     ## vedere preferiti/non preferiti
     names_not_favourite = list(np.setdiff1d( filtered_table.Nome.unique(), names_favourite ))
     names_to_return = []
@@ -144,7 +156,7 @@ def view_role_explorer(player_info, all_teams, fav_file = None, role = 'P', filt
 
     filtered_table = filtered_table.loc[filtered_table.Nome.isin(names_to_return)]
        
-    table = filtered_table[get_features(role)] 
+    table = filtered_table[get_features(role) + ['Slot'] ]
     
     first_level_header = get_first_header(role)
     first_level_header_name = first_level_header[0] 
@@ -157,8 +169,13 @@ def view_role_explorer(player_info, all_teams, fav_file = None, role = 'P', filt
     table = table.rename(columns = map_features_role_exploration())
        
     all_images = [f for f in listdir('static/img') if isfile(join('static/img', f))]
+    
+    if sort_by[0]:
+        table = table.sort_values(sort_by[0], ascending=sort_by[1])
 
     return render_template( 'role_explorer.html', 
+                           actual_role = role, actual_team = team_selected, 
+                           actual_min_pres = filter_presence, actual_slot = slot,
                            images_existing = all_images, fav_names = names_favourite,
                            first_level_header_name = first_level_header_name,
                            first_level_header_size = first_level_header_size,

@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import plotly.express as px
+import os.path
 
 
 def build_team(team_list, player_info, player_hist):
@@ -40,3 +41,29 @@ def build_team(team_list, player_info, player_hist):
     fig_history_fantavoto = px.line(mean_by_role_giornata, x="Giornata", y="FV", color="Ruolo", title="Media Fantavoto per ruolo per giornata",  color_discrete_map=color_discrete_map).to_html()
     
     return team_df, table, mean_pt, bonus_total, malus_total, fig_history_voto, fig_history_fantavoto, fig_history_punti_giornata
+
+
+def slot_handler(slot_selector_list):
+    
+    records = []
+    for slot_selector in slot_selector_list:
+        nome = slot_selector.split(' + ')[0]
+        slot = slot_selector.split(' + ')[1]
+        
+        records.append({'Nome':nome,'Slot':slot})
+    
+    new_slot_df = pd.DataFrame(records)
+    
+    if os.path.exists('../tmp/slot_df.csv'):
+        slot_df = pd.read_csv('../tmp/slot_df.csv',index_col=[0])
+        slot_df = pd.concat( [slot_df, new_slot_df] )
+        slot_df = slot_df.drop_duplicates(subset='Nome',keep='last').reset_index(drop=True)
+    else:
+        slot_df = new_slot_df.reset_index(drop=True)
+    
+    slot_df.to_csv('../tmp/slot_df.csv')
+    
+        
+    
+    
+    

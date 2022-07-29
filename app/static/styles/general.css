@@ -75,7 +75,7 @@ body {
 
 /* ------------------------FILTER INPUT--------------------------------  */
 .dropdown_filter_box{
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto ;
     border-radius: 12px;
     background-color: #7c62ed;
     padding: 10px;

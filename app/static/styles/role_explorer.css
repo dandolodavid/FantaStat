@@ -131,6 +131,13 @@ thead tr:last-child td:last-child {
   
 }
 
+.tableFixHead thead button {
+  color:#fffafa;
+  font-weight: bold;
+  font-size: 13px;  
+  font-family: "Helvetica";
+}
+
 tfoot{
   background-color:rgba(244, 11, 11, 0.729);
   border-color:None;
@@ -171,3 +178,15 @@ tfoot tr:last-child td:last-child {
   border-radius:5px;
 }
  
+
+input[type=checkbox] {
+  accent-color: red;
+  width : 20px;
+  height : 20px;
+}
+
+.sort_button{
+  color: transparent;
+  background-color: transparent;
+  border-color: transparent;
+}
