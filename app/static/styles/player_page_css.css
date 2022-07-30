@@ -12,7 +12,7 @@
     position: relative;
     z-index: 100;
     min-height: 80vh;
-    max-width: calc(100vw - 50vw);
+    max-width: calc(100vw - 20vw);
     min-width: 300px;
 }
 
@@ -20,6 +20,8 @@
     padding:10px;
     border-radius: 12px;
     background-color: #c8d8e4;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .player_meta_grid {
@@ -27,68 +29,104 @@
     display: grid;
     grid-template-columns: auto auto ;
     background-color: #52ab98;
-    padding: 20px;
+    padding: 10px;
+    height: 450px;
   }
 
 .player-figure{
   object-fit: contain;
   text-align: center;
+  height: auto;
+  margin-bottom: -40px;
 }
 
 .player-figure img {
-    padding: 5px;
-    width: auto;
-    height: auto;max-width: min(250px,100%);
-    max-height: min(280px,100%);
+    width: 180px;
+    height: 250px;
+    margin-bottom: -40px;
   }
 
-  .presenze_meta_grid {
-    border-radius: 12px;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto ;
-    background-color: #52ab98;
-    padding: 20px;
-  }
-
-  .statistiche_meta_grid {
-    border-radius: 12px;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    background-color: #52ab98;
-    padding: 20px;
-  }
-
-  .bonus_malus_meta_grid {
-    border-radius: 12px;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    background-color: #52ab98;
-    padding: 20px;
-  }
-
-  .grid_item {
-    padding: 5px;
-    font-size: 16;
-    text-align: center;
-  }
-
-  .h1{
-    font-size: 45px;
-  }
-
-
-  .h2{
-    font-size: 30px;
-  }
-
-  
-  .h3{
-    font-size: 25px;
-  }
-
-.bottom{
-    margin-bottom: 0;
-    margin-top:0;
-    padding-bottom: 0;
-    background-color: #232F3E;
+.meta_grid {
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto ;
+  background-color: #52ab98;
+  padding: 20px;
+  height: 300px;
 }
+
+.grid_item {
+  padding: 5px;
+  text-align: center;
+}
+
+.fantastat{
+  font-size: 25px;
+  margin:5px;
+  margin-bottom: -40px;
+}
+
+.summary{
+  font-size: 25px;
+  margin:5px;
+  margin-bottom: -40px;
+  height: 250px;
+}
+
+
+.player_page_grid{
+grid-template-columns: auto auto ;
+display: grid;
+margin:10px
+}
+
+.vertical_section_disposition{
+grid-template-rows: auto auto;
+display: grid;
+margin:10px
+}
+
+.div_plot{
+margin: 10px;
+border-radius: 12px;
+}
+
+.plot_grid{
+  grid-template-rows: auto auto auto;
+  display:grid;
+}
+
+svg{
+border-radius: 20px;
+}
+
+.stat{
+margin: 10px;
+font-size: 16px;
+}
+
+.row_container{
+margin: 10px;
+}
+
+
+
+/*------- H text -------*/
+
+h1{
+  font-size: 45px;
+  margin: 2px; 
+}
+
+
+h2{
+  font-size: 25px;
+  margin: 2px; 
+}
+
+
+h3{
+  font-size: 20px;
+  margin: 2px; 
+}
+

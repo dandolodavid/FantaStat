@@ -212,7 +212,8 @@ def view_player_page(player_info, player_hist, all_names, nome):
     plot_bonus = fig.to_html()
     
     ##
-    return render_template('player_page.html', names = all_names,
+    return render_template('player_page.html', actual_name = nome,
+                                               names = all_names,
                                                nome = data['Nome'], 
                                                team = data['Squadra'],
                                                img_src = data['img'],
