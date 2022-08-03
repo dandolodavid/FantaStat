@@ -55,6 +55,7 @@ def info_extraction(data, nome, stagione):
     info['Stagione'] = stagione
     info['Ruolo'] = ruolo
     info['Squadra'] = data['Squadra'].unique()[0]
+    info['Id'] = data['Id'].unique()[0]
 
     info['Bonus'] = data['Bonus'].sum()
     info['Malus'] = data['Malus'].sum()

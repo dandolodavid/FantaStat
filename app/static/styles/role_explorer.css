@@ -190,3 +190,22 @@ input[type=checkbox] {
   background-color: transparent;
   border-color: transparent;
 }
+
+.slot_residual_count{
+  padding:10px;
+  border-radius: 12px;
+  background-color: #7c62ed;
+  padding: 10px;
+  padding: 20px;
+  margin: 5px;
+  font-weight: bold;
+  color: #f5f5f5;
+  font-size: 15px;
+}
+
+
+.slot_residual_count_item{
+  display: inline;
+  margin:10px
+}
+

@@ -1,162 +1,515 @@
-,Nome,Slot
-0,Acerbi Francesco,Titolare
-1,Spinazzola Leonardo,Overdog
-2,Karsdorp Rick,Regolarista
-3,Smalling Chris,
-4,Mancini Gianluca,
-5,Kumbulla Marash,
-6,Vina Matias,
-7,Ibanez Roger,
-8,Busio Gianluca,
-9,Zaniolo Nicolò,Overdog
-10,Jajalo Mato,
-11,Ekdal Albin,
-12,Sturaro Stefano,
-13,Cristante Bryan,Ultimi slot
-14,Basic Toma,
-15,Kiyine Sofian,
-16,Rovella Nicolò,
-17,Rincon Tomas,
-18,Pereyra Roberto,Overdog
-19,Arslan Tolgay,
-20,Bessa Daniel,
-21,Pasalic Mario,Top
-22,Obi Joel,
-23,Veloso Miguel,
-24,Vacca Antonio Junior,
-25,Freuler Remo,
-26,Kovalenko Viktor,
-27,Torreira Lucas,
-28,Portanova Manolo,
-29,Maleh Youssef,
-30,Orsolini Riccardo,Jolly
-31,Messias Junior,
-32,Pereiro Gaston,
-33,Mandragora Rolando,
-34,Harroui Abdou,
-35,Pellegrini Lorenzo,SuperTop
-36,Traorè Hamed ,SemiTop
-37,Grassi Alberto,
-38,Felipe Anderson,SemiTop
-39,De Roon Marten,
-40,Nandez Nahitan,
-41,Pobega Tommaso,Jolly
-42,Praet Dennis,
-43,Sottil Riccardo,
-44,Castrovilli Gaetano,
-45,Callejon Josè Maria,
-46,Kastanos Grigoris,
-47,Samardzic Lazar,Jolly
-48,Dominguez Nicolas,
-49,Koopmeiners Teun,Underdog
-50,Malinovskyi Ruslan,Top
-51,Barak Antonin,
-52,Zaccagni Mattia,Top
-53,Bajrami Nedim,SemiTop
-54,Vignato Emanuel,
-55,Amrabat Sofyan,
-56,McKennie Weston,
-57,Matheus Henrique,
-58,Lobotka Stanislav,
-59,Melegoni Filippo,
-60,Agudelo Kevin,
-61,Krunic Rade,
-62,Pessina Matteo,
-63,Vidal Arturo,
-64,Bernardeschi Federico,
-65,Milinkovic-Savic Sergej,SuperTop
-66,Saponara Riccardo,
-67,Elmas Eljif,Jolly
-68,Barella Nicolò,SemiTop
-69,Zurkowski Szymon,SemiTop
-70,Henderson Liam,Titolare
-71,Stulac Leo,
-72,Tameze Adrien,Underdog
-73,Walace Souza,
-74,Veretout Jordan,
-75,Thorsby Morten,
-76,Svanberg Mattias,
-77,Soriano Roberto,
-78,Perisic Ivan,
-79,Maggiore Giulio,
-80,Lukic Sasa,
-81,Lopez Maxime,
-82,Lazovic Darko,
-83,Tonali Sandro,
-84,Saelemaekers Alexis,
-85,Luis Alberto Alconchel,
-86,Badelj Milan,
-87,Zielinski Piotr,
-88,Bandinelli Filippo,
-89,Calhanoglu Hakan,
-90,Makengo Jean-Victor,
-91,Medel Gary,
-92,Aramu Mattia,
-93,Ilic Ivan,
-94,Crnigoj Domen,
-95,Ruiz Fabian,
-96,Bonaventura Giacomo,
-97,Coulibaly Lassana,
-98,Leiva Lucas,
-99,Deiola Alessandro,
-100,Mkhitaryan Henrikh,
-101,Duncan Alfred,
-102,Ricci Samuele,
-103,Cataldi Danilo,
-104,Kessiè Franck,
-105,Locatelli Manuel,
-106,Diaz Brahim,
-107,Rabiot Adrien,
-108,Bennacer Ismael,
-109,Candreva Antonio,SemiTop
-110,Frattesi Davide,Regolarista
-111,Marin Razvan,Titolare
-112,Brozovic Marcelo,Regolarista
-113,Zambo Anguissa André,Regolarista
-114,Zovko Petar,
-115,Satalino Giacomo,
-116,Marfella Davide,
-117,Gemello Luca,
-118,Semper Adrian,
-119,Rossi Francesco,
-120,Ravaglia Nicola,
-121,Pinsoglio Carlo,
-122,Bardi Francesco,
-123,Radu Ionut,
-124,Pegolo Gianluca,
-125,Berardi Alessandro,
-126,Radunovic Boris,
-127,Fiorillo Vincenzo,
-128,Sportiello Marco,
-129,Meret Alex,
-130,Pandur Ivor,
-131,Perin Mattia,
-132,Berisha Etrit,Regolarista
-133,Dragowski Bartlomiej,
-134,Padelli Daniele,
-135,Lezzerini Luca,
-136,Tatarusanu Ciprian,
-137,Falcone Wladimiro,
-138,Zoet Jeroen,
-139,Romero Sergio,
-140,Maenpaa Niki,
-141,Reina Pepe,
-142,Strakosha Thomas,
-143,Belec Vid,
-144,Vicario Guglielmo,
-145,Consigli Andrea,
-146,Cragno Alessio,
-147,Sirigu Salvatore,
-148,Skorupski Lukasz,
-149,Provedel Ivan,
-150,Silvestri Marco,
-151,Montipò Lorenzo,
-152,Audero Emil,Titolare
-153,Rui Patricio,Top
-154,Terracciano Pietro,
-155,Musso Juan,Titolare
-156,Milinkovic-Savic Vanja,Regolarista
-157,Handanovic Samir,SuperTop
-158,Szczesny Wojciech,
-159,Ospina David,
-160,Maignan Mike,SuperTop
+,Id,Slot
+0,22,Titolare
+1,4312,SuperTop
+2,5832,Titolare
+3,133,Titolare
+4,509,Titolare
+5,2178,Titolare
+6,4957,Titolare
+7,761,Titolare
+8,2211,Titolare
+9,4964,Titolare
+10,159,
+11,2814,Scommessa
+12,1843,
+13,2134,
+14,4,
+15,41,
+16,42,
+17,160,
+18,217,
+19,218,
+20,510,
+21,543,
+22,673,
+23,799,
+24,1889,
+25,1930,
+26,1947,
+27,2127,
+28,2170,Scommessa
+29,2297,
+30,2790,
+31,2815,
+32,2845,
+33,4351,
+34,4431,
+35,4468,
+36,4491,
+37,4525,
+38,4977,
+39,5005,
+40,5304,
+41,5333,
+42,5448,
+43,5502,
+44,5518,
+45,5528,
+46,5682,
+47,5704,
+48,5830,
+49,5841,
+50,5853,
+51,5876,
+52,5887,
+53,5889,
+54,5890,
+55,5716,
+56,5676,
+57,215,Titolare
+58,5311,
+59,4938,
+60,407,Scommessa
+61,2832,Titolare
+62,90,
+63,4517,Titolare
+64,5471,
+65,2475,
+66,537,
+67,383,
+68,643,
+69,2489,Titolare
+70,5336,Titolare
+71,177,
+72,2061,
+73,2530,Scommessa
+74,2409,
+75,2097,
+76,495,
+77,472,Titolare
+78,568,
+79,5714,
+80,5690,
+81,2195,
+82,315,
+83,5494,
+84,5512,
+85,5874,
+86,5785,
+87,5505,
+88,5391,
+89,5378,
+90,4500,
+91,212,
+92,5865,
+93,5881,
+94,5843,
+95,5814,
+96,5500,
+97,1839,
+98,5806,
+99,5673,
+100,5864,
+101,5515,Titolare
+102,4923,
+103,5786,
+104,186,
+105,5854,Titolare
+106,5460,Titolare
+107,4359,
+108,5842,Scommessa
+109,2103,
+110,1943,
+111,5836,Titolare
+112,5882,
+113,2842,
+114,5728,
+115,5837,
+116,453,Top
+117,250,Top
+118,4270,Top
+119,2792,SemiTop
+120,572,SemiTop
+121,610,SemiTop
+122,316,SemiTop
+123,2531,SuperTop
+124,2841,SuperTop
+125,785,SuperTop
+126,2382,Titolare Bonus
+127,2719,Titolare Bonus
+128,505,Titolare Bonus
+129,647,Jolly
+130,2038,Jolly
+131,5845,Underdog
+132,2466,Jolly
+133,2438,Titolare Bonus
+134,479,Underdog
+135,5694,Titolare Bonus
+136,507,Jolly
+137,5529,Titolare Bonus
+138,4661,Top
+139,4200,Jolly
+140,4371,SemiTop
+141,608,Top
+142,4179,Titolare Bonus
+143,4268,SemiTop
+144,2819,SemiTop
+145,309,SemiTop
+146,1958,Titolare Bonus
+147,2544,Top
+148,2119,SemiTop
+149,4510,SemiTop
+150,2764,Top
+151,531,SemiTop
+152,645,SuperTop
+153,530,Top
+154,2002,Top
+155,303,SemiTop
+156,2172,Top
+157,4427,SemiTop
+158,335,SemiTop
+159,2766,Overdog
+160,302,Overdog
+161,5451,SemiTop
+162,5839,SemiTop
+163,2529,Overdog
+164,2848,Titolare Bonus
+165,536,Jolly
+166,697,Titolare Bonus
+167,2167,Jolly
+168,5685,Underdog
+169,5788,Underdog
+170,4658,Underdog
+171,4890,Underdog
+172,376,Jolly
+173,2009,Titolare Bonus
+174,4486,Underdog
+175,4978,Non settato
+176,5792,Jolly
+177,1978,Non settato
+178,2625,Titolare Bonus
+179,4479,Underdog
+180,2432,Titolare
+181,4992,Titolare Bonus
+182,5834,Non settato
+183,5844,Underdog
+184,801,Non settato
+185,4376,Jolly
+186,4393,Titolare
+187,5001,Underdog
+188,5719,Non settato
+189,600,Non settato
+190,1901,Non settato
+191,2144,Scommessa
+192,2528,Non settato
+193,5063,Non settato
+194,5422,Non settato
+195,5798,Non settato
+196,5829,Non settato
+197,5875,Non settato
+198,4178,Non settato
+199,5850,Scommessa
+200,5870,Non settato
+201,2008,Non settato
+202,2274,Non settato
+203,4285,Non settato
+204,5858,Scommessa
+205,5886,Non settato
+206,666,Non settato
+207,694,Non settato
+208,1851,Non settato
+209,2825,Non settato
+210,2855,Non settato
+211,4364,Non settato
+212,4475,Non settato
+213,4725,Non settato
+214,4884,Non settato
+215,5784,Scommessa
+216,5857,Non settato
+217,5863,Non settato
+218,5878,Non settato
+219,557,Non settato
+220,1976,Non settato
+221,2161,Non settato
+222,2334,Non settato
+223,4465,Non settato
+224,4921,Non settato
+225,5499,Non settato
+226,5517,Non settato
+227,5880,Non settato
+228,58,Non settato
+229,2639,Non settato
+230,2742,Non settato
+231,4411,Non settato
+232,4501,Non settato
+233,4896,Ultimi slot
+234,5444,Non settato
+235,5476,Non settato
+236,5510,Non settato
+237,5776,Scommessa
+238,5813,Non settato
+239,5869,Non settato
+240,5884,Titolare
+241,21,Non settato
+242,173,Non settato
+243,2804,Non settato
+244,2835,Non settato
+245,4987,Non settato
+246,5312,Non settato
+247,5420,Non settato
+248,5423,Non settato
+249,5468,Non settato
+250,5519,Non settato
+251,5722,Non settato
+252,5735,Non settato
+253,5789,Non settato
+254,5823,Non settato
+255,5855,Non settato
+256,5868,Non settato
+257,5872,Non settato
+258,5873,Non settato
+259,5879,Non settato
+260,5888,Non settato
+261,5992,Non settato
+262,4292,SuperTop
+263,286,Titolare
+264,5355,Underdog
+265,5513,SuperTop
+266,513,Titolare
+267,252,Titolare Bonus
+268,581,SemiTop
+269,798,Top
+270,2788,Top
+271,487,Titolare
+272,2263,Overdog
+273,4899,SemiTop
+274,4331,Titolare
+275,5332,Titolare Bonus
+276,4245,SemiTop
+277,2525,Jolly
+278,4982,Titolare Bonus
+279,357,Top
+280,4412,Titolare
+281,254,Jolly
+282,464,Jolly
+283,2280,Regolarista
+284,4421,Ultimi slot
+285,2188,Titolare
+286,140,Ultimi slot
+287,787,Titolare
+288,358,Ultimi slot
+289,1847,Titolare
+290,1891,Titolare
+291,45,Non settato
+292,2016,Titolare
+293,1868,Non settato
+294,2653,Non settato
+295,5323,Non settato
+296,2141,Non settato
+297,11,Non predenere
+298,2312,Non settato
+299,4979,Non settato
+300,630,Non settato
+301,4433,Scommessa
+302,327,Non settato
+303,118,Non settato
+304,4887,Jolly
+305,5526,Underdog
+306,5514,Titolare
+307,5475,Titolare
+308,5375,Scommessa
+309,5450,Titolare
+310,1895,Titolare
+311,5520,Titolare Bonus
+312,2181,Non predenere
+313,4976,Top
+314,2164,Titolare
+315,4332,Titolare
+316,460,Titolare
+317,554,Titolare Bonus
+318,2120,Top
+319,253,Jolly
+320,2160,Top
+321,695,Jolly
+322,4237,Titolare
+323,5804,Non settato
+324,2847,Non settato
+325,5747,Non settato
+326,5527,Scommessa
+327,5846,Non settato
+328,5509,Non settato
+329,5480,Non settato
+330,5010,Non settato
+331,4983,Non settato
+332,4960,Non settato
+333,2745,Non settato
+334,2769,Non settato
+335,2746,Non settato
+336,5849,Non settato
+337,5820,Non settato
+338,2174,Non settato
+339,1898,Non settato
+340,259,Non settato
+341,226,Non settato
+342,5859,Non settato
+343,5994,Non settato
+344,5867,Non settato
+345,5833,Non settato
+346,5739,Non settato
+347,4958,Non settato
+348,4946,Non settato
+349,5838,Non settato
+350,329,Non settato
+351,5860,Non settato
+352,5891,Non settato
+353,2208,Non settato
+354,2064,Non settato
+355,2668,Non settato
+356,144,Non settato
+357,2737,Non settato
+358,4401,Non settato
+359,50,Non settato
+360,4758,Non settato
+361,5848,Non settato
+362,5835,Non settato
+363,5793,Non settato
+364,5764,Non settato
+365,5678,Non settato
+366,5316,Non settato
+367,5017,Non settato
+368,4985,Non settato
+369,4945,Non settato
+370,5354,Non settato
+371,5399,Non settato
+372,5424,Non settato
+373,5461,Non settato
+374,4502,Non settato
+375,4375,Non predenere
+376,5503,Non settato
+377,5740,Non settato
+378,2252,Non settato
+379,454,Non settato
+380,360,Non settato
+381,2453,Non settato
+382,4897,Non settato
+383,2633,Jolly
+384,4495,Non settato
+385,5693,Titolare
+386,4530,Titolare
+387,2104,Titolare
+388,261,Titolare
+389,49,Titolare
+390,5856,Scommessa
+391,5840,Scommessa
+392,5750,Ultimi slot
+393,5686,Scommessa
+394,5532,Titolare
+395,5481,Scommessa
+396,4657,Jolly
+397,2169,Titolare
+398,272,Titolare
+399,5877,Scommessa
+400,5449,Titolare Bonus
+401,662,Ultimi slot
+402,5498,Ultimi slot
+403,4994,Titolare
+404,4407,Titolare
+405,2784,Titolare
+406,2130,Scommessa
+407,2296,Overdog
+408,2180,Titolare
+409,322,Overdog
+410,1852,Titolare Bonus
+411,5892,Titolare
+412,5885,Titolare Bonus
+413,4751,Top
+414,4934,Titolare
+415,5718,Non settato
+416,4493,Non settato
+417,5851,Non settato
+418,4329,Titolare
+419,2724,Non settato
+420,2446,Non settato
+421,2300,Non settato
+422,2192,Titolare
+423,729,Non settato
+424,660,Titolare
+425,612,Non settato
+426,139,Non settato
+427,84,Non settato
+428,5862,Titolare
+429,5847,Non settato
+430,5831,Non settato
+431,5691,Non settato
+432,4925,Non settato
+433,4891,Non settato
+434,4521,Titolare
+435,4432,Non settato
+436,4426,Non settato
+437,2869,Non settato
+438,2865,Non settato
+439,2758,Titolare
+440,2739,Titolare
+441,2728,Titolare
+442,2318,Non settato
+443,640,Titolare
+444,393,Non settato
+445,294,Non settato
+446,244,Titolare
+447,5861,Non settato
+448,4409,Top
+449,2816,Top
+450,256,Jolly
+451,142,Titolare
+452,2077,SemiTop
+453,632,Top
+454,2392,Titolare
+455,4681,Titolare
+456,779,Non settato
+457,788,Titolare
+458,795,Jolly
+459,5453,Titolare
+460,5397,Non settato
+461,4515,Ultimi slot
+462,5298,Scommessa
+463,333,Non settato
+464,2839,Jolly
+465,4498,Titolare
+466,4522,Titolare
+467,2778,Titolare
+468,5119,Jolly
+469,2818,Titolare
+470,2391,Non settato
+471,2253,Non settato
+472,152,Overdog
+473,2194,SemiTop
+474,150,Jolly
+475,2775,Titolare Bonus
+476,2085,Overdog
+477,2857,Titolare Bonus
+478,332,Titolare Bonus
+479,4970,Jolly
+480,827,Titolare
+481,5457,Underdog
+482,4449,Underdog
+483,265,Regolarista
+484,5287,Non settato
+485,2154,Non settato
+486,434,Non settato
+487,5674,Titolare
+488,5511,Non settato
+489,238,Non settato
+490,2011,Non settato
+491,5504,Titolare
+492,4965,Titolare
+493,2379,Non settato
+494,1870,Titolare Bonus
+495,148,Non settato
+496,367,Titolare Bonus
+497,236,Regolarista
+498,2741,Underdog
+499,5007,Scommessa
+500,2215,Scommessa
+501,4220,Regolarista
+502,4287,Titolare
+503,526,Titolare
+504,4825,Jolly
+505,4988,Underdog
+506,1933,Non settato
+507,4377,Non settato
+508,4459,Non settato
+509,4869,Titolare
+510,4892,Ultimi slot
+511,5329,Titolare
+512,4973,Titolare Bonus
+513,5688,Non settato

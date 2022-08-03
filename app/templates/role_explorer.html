@@ -17,6 +17,7 @@
                         <li class = 'navbar-item'><a href="/role-explorer">Info ruolo</a></li>
                         <li class = 'navbar-item'><a href="/player-page">Info giocatore</a></li>
                         <li class = 'navbar-item'><a href="/team-builder">Team Builder</a></li>
+                        <li class = 'navbar-item'><a href="/tool-asta">Tool Asta</a></li>
                     </ul>
                 </div>
             </div>
@@ -26,7 +27,7 @@
         
         <div class='grid_item'>
             Seleziona ruolo:
-            <form action= "{{ url_for('handle_role_explorer') }}" method="POST">
+            <form action= "{{ url_for('route_role_explorer_action') }}" method="POST">
                 <select name ='role_selected'>
                     {% for role in ['P','D','C','A'] %}
                         {% if role == actual_role %}
@@ -69,7 +70,7 @@
         <div class='grid_item'>
             Seleziona slot<br>
                 <select name ='slot_asta'>
-                    {% for slot in ['Tutti','','SuperTop','Top','SemiTop','Titolare','Titolare Bonus','Regolarista','Underdog','Overdog','Jolly','Ghost','Ultimi slot','Scommessa','Non predenere','Non disponibile'] %}
+                    {% for slot in ['Tutti','Non settato','SuperTop','Top','SemiTop','Titolare','Titolare Bonus','Regolarista','Underdog','Overdog','Jolly','Ghost','Ultimi slot','Scommessa','Non predenere',] %}
                         {% if slot == actual_slot %}
                             <option selected="selected" value= "{{slot}}">{{slot}}</option>"
                         {% else %}
@@ -105,11 +106,11 @@
 
     <div class='main_content'>
         <table class="sortable tabella tableFixHead">
-            <form action= "{{ url_for('handle_role_explorer') }}" method="POST">
+            <form action= "{{ url_for('route_role_explorer_action') }}" method="POST">
             <thead class = 'table_header'>
                 <tr>
                     <th></th>
-                    {% for col_name in table.columns[1:-1]%}
+                    {% for col_name in table.columns[1:-2]%}
                     <th><button type="submit" name="sort" value="{{col_name}}" class='sort_button'>
                     {% if col_name.replace(' ','_').lower() + '.png' in images_existing %}
                         <img src={{ url_for('static',filename='img/' + col_name.replace(' ','_').lower() + '.png') }} title="{{col_name}}" width="30" height="30">
@@ -124,28 +125,28 @@
             </thead>
 
             <tbody aria-live = 'polite' aria-relevant = 'all'>
-                <form action= "{{ url_for('handle_role_explorer') }}" method="POST">
+                <form action= "{{ url_for('route_role_explorer_action') }}" method="POST">
                     {% for idx,row in table.iterrows() %}
                         <tr class = 'row_role'>
                         <th class='row_cell'>
                             <div class = 'logo-img'>
-                                {% if row.Nome in fav_names %}
-                                <button type="submit" name="add_to_fav" value="{{row.Nome}}" class='campioncino_button fav'><img src={{row[0]}} title="Clicca per rimuovere dai preferiti" class = 'campioncino'></button>
+                                {% if row.Id|string in fav_ids %}
+                                <button type="submit" name="add_to_fav" value="{{row.Id|string}}" class='campioncino_button fav'><img src={{row.img}} title="Clicca per rimuovere dai preferiti" class = 'campioncino'></button>
                                 {% else %}
-                                <button type="submit" name="add_to_fav" value="{{row.Nome}}" class='campioncino_button'><img src={{row[0]}} title="Clicca per aggiungere ai preferiti" class = 'campioncino'></button>
+                                <button type="submit" name="add_to_fav" value="{{row.Id|string}}" class='campioncino_button'><img src={{row.img}} title="Clicca per aggiungere ai preferiti" class = 'campioncino'></button>
                                 {% endif %}
                             </div>
                         </th>
-                        {% for col in row[1:-1]%}
+                        {% for col in row[1:-2]%}
                             <th class='row_cell'>{{col}}</th>
                         {% endfor %}
                         <th class='row_cell'>
                             <select name ='slot_selector' onchange="this.form.submit()">
-                                {% for slot in ['Tutti','','SuperTop','Top','SemiTop','Titolare','Titolare Bonus','Regolarista','Underdog','Overdog','Jolly','Ghost','Ultimi slot','Scommessa','Non predenere','Non disponibile'] %}
+                                {% for slot in ['Tutti','Non settato','SuperTop','Top','SemiTop','Titolare','Titolare Bonus','Regolarista','Underdog','Overdog','Jolly','Ghost','Ultimi slot','Scommessa','Non predenere'] %}
                                     {% if slot == row.Slot %}
-                                        <option  selected="selected" value= "{{ row.Nome + ' + ' + slot }}">{{slot}}</option>
+                                        <option  selected="selected" value= "{{ row.Id|string + ' + ' + slot }}">{{slot}}</option>
                                     {% else %}
-                                        <option  value= "{{ row.Nome + ' + ' + slot }}">{{slot}}</option>
+                                        <option  value= "{{ row.Id|string + ' + ' + slot }}">{{slot}}</option>
                                     {% endif %}
                                 {% endfor %}
                             </select> <noscript><input type="submit" value="Submit"></noscript>

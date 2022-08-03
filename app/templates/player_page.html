@@ -17,6 +17,7 @@
                         <li class = 'navbar-item'><a href="/role-explorer">Info ruolo</a></li>
                         <li class = 'navbar-item'><a href="/player-page">Info giocatore</a></li>
                         <li class = 'navbar-item'><a href="/team-builder">Team Builder</a></li>
+                        <li class = 'navbar-item'><a href="/tool-asta">Tool Asta</a></li>
                     </ul>
                 </div>
                 <div class = 'navbar_this_page'>
@@ -33,7 +34,7 @@
 
         <div class = "dropdown_filter_box">
             Seleziona giocatore:
-            <form action= "{{ url_for('handle_name') }}" method="POST">
+            <form action= "{{ url_for('route_player_page') }}" method="POST">
                 <select name ='nome_selezionato' onchange="this.form.submit()">
                     {% for name in names %}
                         {% if name == actual_name %}

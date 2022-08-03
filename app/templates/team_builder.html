@@ -17,6 +17,7 @@
                         <li class = 'navbar-item'><a href="/role-explorer">Info ruolo</a></li>
                         <li class = 'navbar-item'><a href="/player-page">Info giocatore</a></li>
                         <li class = 'navbar-item'><a href="/team-builder">Team Builder</a></li>
+                        <li class = 'navbar-item'><a href="/tool-asta">Tool Asta</a></li>
                     </ul>
                 </div>
             </div>
@@ -27,9 +28,9 @@
 
         <div class = 'dropdown_filter_box'>
             Seleziona moduli:
-            <form action= "{{ url_for('handle_team_builder') }}" method="POST">
+            <form action= "{{ url_for('route_team_builder_action') }}" method="POST">
                 <select name ='modulo_scelto' class = 'selector'>
-                    {% for modulo in ['3-4-3','4-3-3'] %}
+                    {% for modulo in ['3-4-3','3-5-2','4-3-3','4-4-2','4-5-1','5-2-3','5-3-2','5-4-1'] %}
                         {% if modulo == modulo_scelto %}
                             <option selected="selected" value= "{{modulo}}">{{modulo}}</option>
                         {% else %}
@@ -42,11 +43,11 @@
         </div>
     
         <div class = 'team_builder'>
-            <form  action= "{{ url_for('handle_team_builder') }}" method="POST">
+            <form  action= "{{ url_for('route_team_builder_action') }}" method="POST">
 
                         <div class='por'>
                             <div class='grid_item_por'>
-                            <select name='nome_1'>
+                            <select class = "player_selector", name='nome_1'>
                                     {% for name in por_names %}
                                     <option value= "{{name}}">{{name}}</option>"
                                     {% endfor %}
@@ -58,7 +59,7 @@
                     <div class="{{dif_class}}">
                         {% for i in nomi_dif%}
                         <div class='grid_item_dif'>
-                            <select name="{{i}}">
+                            <select class = "player_selector", name="{{i}}">
                                 {% for name in dif_names %}
                                 <option value= "{{name}}">{{name}}</option>"
                                 {% endfor %}
@@ -70,7 +71,7 @@
                     <div class="{{cen_class}}">
                         {% for i in nomi_cen%}
                         <div class='grid_item_cen'>
-                            <select name="{{i}}">
+                            <select class = "player_selector", name="{{i}}">
                                 {% for name in cen_names %}
                                 <option value= "{{name}}">{{name}}</option>"
                                 {% endfor %}
@@ -82,7 +83,7 @@
                     <div class="{{att_class}}">
                         {% for i in nomi_att%}
                         <div class='grid_item_att'>
-                            <select name="{{i}}">
+                            <select class = "player_selector", name="{{i}}">
                                 {% for name in att_names %}
                                 <option value= "{{name}}">{{name}}</option>"
                                 {% endfor %}

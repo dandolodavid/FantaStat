@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{nome}} Asta Tool </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/role_explorer.css') }}">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/general.css') }}"></head>
+<body>    
+    <header>
+            <div class="navbar_menu">
+                <div class = 'logo_container'>
+                    <img src = 'static/img/logo.png' class = 'logo'>
+                </div>
+                <div class = 'navbar_container'>
+                    <ul>
+                        <li class = 'navbar-item'><a href="/classifica">Info squadre</a></li>
+                        <li class = 'navbar-item'><a href="/role-explorer">Info ruolo</a></li>
+                        <li class = 'navbar-item'><a href="/player-page">Info giocatore</a></li>
+                        <li class = 'navbar-item'><a href="/team-builder">Team Builder</a></li>
+                        <li class = 'navbar-item'><a href="/tool-asta">Tool Asta</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    
+    <div class = "dropdown_filter_box">
+        
+            <div class='grid_item'>
+            Seleziona ruolo:
+            <form action= "{{ url_for('route_tool_asta_action') }}" method="POST">
+                <select name ='role_selected'>
+                    {% for role in ['P','D','C','A'] %}
+                        {% if role == actual_role %}
+                            <option selected="selected" value= "{{role}}">{{role}}</option>"
+                        {% else %}
+                            <option value = "{{role}}">{{role}}</option>"
+                        {% endif %}
+                        
+                    {% endfor %}
+                </select>
+            </div>
+        
+            <div class='grid_item'>
+            Seleziona minimo presenze<br>
+                <select name ='min_pres'>
+                    {% for min_pres in [0,5,10,20,25,30] %}
+                        {% if min_pres|int == actual_min_pres|int %}
+                            <option selected="selected" value= "{{min_pres}}">{{min_pres}}</option>"
+                        {% else %}
+                            <option value = "{{min_pres}}">{{min_pres}}</option>"
+                        {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+
+        
+            <div class='grid_item'>
+            Seleziona Squadra<br>
+                <select name ='team_selected'>
+                    {% for nome_squadra in ['Tutte'] + all_teams %}
+                        {% if nome_squadra == actual_team %}
+                            <option selected="selected" value= "{{nome_squadra}}">{{nome_squadra}}</option>"
+                        {% else %}
+                            <option value= "{{nome_squadra}}">{{nome_squadra}}</option>"
+                        {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class='grid_item'>
+            Seleziona slot<br>
+                <select name ='slot_asta'>
+                    {% for slot in ['Tutti','Non settato','SuperTop','Top','SemiTop','Titolare','Titolare Bonus','Regolarista','Underdog','Overdog','Jolly','Ghost','Ultimi slot','Scommessa','Non predenere'] %}
+                        {% if slot == actual_slot %}
+                            <option selected="selected" value= "{{slot}}">{{slot}}</option>"
+                        {% else %}
+                            <option value= "{{slot}}">{{slot}}</option>"
+                        {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+
+        <div class='grid_item'>    
+            {% if show_fav %}
+                <input type="checkbox" id="fav" name="checked_fav" value="True" checked="True">
+            {% else %}
+                <input type="checkbox" id="fav" name="checked_fav" value="True">
+            {% endif %}
+            <label for="fav"> Preferiti </label><br>
+
+            {% if show_not_fav %}
+                <input type="checkbox" id="fav" name="checked_not_fav" value="True" checked="True">
+            {% else %}
+                <input type="checkbox" id="fav" name="checked_not_fav" value="True">
+            {% endif %}
+            <label for="not_fav"> Non preferiti</label><br>
+        </div>
+        <div class='grid_item'> <br> <button type="submit" class="btn btn-default">Seleziona</button></div>   
+        </form>
+         
+    </div>
+
+    <div class = "slot_residual_count">
+        <ul>
+            {%for slot in ['Tutti','Non settato','SuperTop','Top','SemiTop','Titolare','Titolare Bonus','Regolarista','Underdog','Overdog','Jolly','Ghost','Ultimi slot','Scommessa','Non predenere'] %}
+            <li class = 'slot_residual_count_item'>{{slot}} : 
+                {% if slot in count_slot %}
+                    {{count_slot[slot]}}</li>
+                {% else %}
+                    0</li>
+                {% endif %}
+            {%endfor%}
+        </ul>
+    </div>
+
+    <div class='main_content'>
+        <table class="sortable tabella tableFixHead">
+            <form action= "{{ url_for('route_tool_asta_action') }}" method="POST">
+            <thead class = 'table_header'>
+                <tr>
+                    <th></th>
+                    {% for col_name in table.columns[1:-2]%}
+                    <th><button type="submit" name="sort" value="{{col_name}}" class='sort_button'>
+                    {% if col_name.replace(' ','_').lower() + '.png' in images_existing %}
+                        <img src={{ url_for('static',filename='img/' + col_name.replace(' ','_').lower() + '.png') }} title="{{col_name}}" width="30" height="30">
+                    {% else %}
+                        {{col_name}}
+                    {% endif %}
+                    </button>
+                    </th>
+                    {% endfor %}
+                    <th>Slot asta</th>
+                </tr>
+            </thead>
+
+            <tbody aria-live = 'polite' aria-relevant = 'all'>
+                <form action= "{{ url_for('route_tool_asta_action') }}" method="POST">
+                    {% for idx,row in table.iterrows() %}
+                        <tr class = 'row_role'>
+                        <th class='row_cell'>
+                            <div class = 'logo-img'>
+                                {% if row.Id|string in fav_ids %}
+                                <button type="submit" name="remove" value="{{row.Id|string}}" class='campioncino_button fav'><img src={{row[0]}} title="Clicca per rimuovere dal listone" class = 'campioncino'></button>
+                                {% else %}
+                                <button type="submit" name="remove" value="{{row.Id|string}}" class='campioncino_button'><img src={{row[0]}} title="Clicca per rimuovere dal listone" class = 'campioncino'></button>
+                                {% endif %}
+                            </div>
+                        </th>
+                        {% for col in row[1:-2]%}
+                            <th class='row_cell'>{{col}}</th>
+                        {% endfor %}
+                        <th class='row_cell'>
+                            <select name ='slot_selector' onchange="this.form.submit()">
+                                {% for slot in ['Tutti','Non settato','SuperTop','Top','SemiTop','Titolare','Titolare Bonus','Regolarista','Underdog','Overdog','Jolly','Ghost','Ultimi slot','Scommessa','Non predenere'] %}
+                                    {% if slot == row.Slot %}
+                                        <option  selected="selected" value= "{{ row.Id|string + ' + ' + slot }}">{{slot}}</option>
+                                    {% else %}
+                                        <option  value= "{{ row.Id|string + ' + ' + slot }}">{{slot}}</option>
+                                    {% endif %}
+                                {% endfor %}
+                            </select> <noscript><input type="submit" value="Submit"></noscript>
+                        </th>
+                        </tr>  
+                    {% endfor %}
+                </form>
+            </tbody>
+
+
+            <tfoot>
+                {% for col_name in table.columns %}
+                    <th></th>
+                {% endfor %}
+                <th></th>
+            </tfoot>
+        </table>
+       
+    </div>
+
+</body>
+</html>    

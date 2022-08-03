@@ -6,10 +6,14 @@ from selenium import webdriver
 import time
 from tqdm import tqdm
 import re
+import requests
 from selenium.webdriver.common.keys import Keys
 from os import listdir,rename
 from os.path import isfile, join
 import time
+import unidecode
+
+
 
 def status_map(status):
     status_dict = { '': 'Inutilizzato', '0' : 'Titolare', '1':'Entrato', '2':'Infortunato', '3':'Squalificato', '4':'Inutilizzato' }
@@ -55,6 +59,8 @@ def scraping_url(browser, url, download_path, extra_path = ''):
     '''
     
     try:
+        
+        id = url.split('/')[-3]
             
         browser.get(url)
         stagione = url.split('/')[-1].replace('-','_')
@@ -83,7 +89,7 @@ def scraping_url(browser, url, download_path, extra_path = ''):
         #salvare url immagine
         img = soup.findAll('img', {"class":'player-image'})[0]['src']
         f = open(extra_path + 'img_src.txt', "a")
-        f.write( ' { "Stagione" : "' + stagione + '", "Nome" : "' + nome + '", "Ruolo" : "' + ruolo + '", "Squadra" : "' + squadra + '", "Src" : "' + img + '" } \n ' )
+        f.write( ' { "Stagione" : "' + stagione + '", "Nome" : "' + nome +  '", "Id" : "' + id +  '", "Ruolo" : "' + ruolo + '", "Squadra" : "' + squadra + '", "Src" : "' + img + '" } \n ' )
         f.close()
         
         status_data.to_csv(extra_path + nome + '^(Status ' + stagione + ').csv')
@@ -102,3 +108,49 @@ def scraping_url(browser, url, download_path, extra_path = ''):
         f = open("log_player_scraping.txt", "a")
         f.write(url + '\n')
         f.close()
+        
+    
+
+def scraping_bad_url(browser, url, download_path, extra_path = ''):
+    '''
+    Params:
+    -------
+    
+    browser : object
+        a selenium driver with already done login to fantacalcio.it
+    url : str
+        a valid url
+        (example : https://www.fantacalcio.it/squadre/Lazio/Adamonis/5502/1/2021-22)
+    path : str
+        path to download the data 
+    
+    '''
+    
+    
+    id = url.split('/')[-3]
+        
+    browser.get(url)
+    stagione = url.split('/')[-1].replace('-','_')
+    
+    #esplorazione html
+    html = browser.page_source 
+    soup = BeautifulSoup(html, 'lxml') #take the html code of the web page    
+    
+    nome = soup.findAll('h1', {"class":'h5 player-name'})[0].text
+    ruolo = soup.findAll('span', {"class":'role'})[0]['data-value'].upper()
+    squadra = soup.findAll('a', {"class":'team-name team-link'})[0].text
+    
+    mv =  str(soup.findAll('span', {"class":'badge badge-primary avg'})[0].text.replace(',','.'))
+    fmv =  str(soup.findAll('span', {"class":'badge badge-info avg'})[0].text.replace(',','.'))
+    
+    presenze = str(soup.findAll('td', {"class":'value'})[0].text)
+    gol = str(soup.findAll('td', {"class":'value'})[1].text)
+    assist = str(soup.findAll('td', {"class":'value'})[2].text)
+    
+    img = soup.findAll('img', {"class":'player-image'})[0]['src']
+    f = open(extra_path + 'error_scraping_player.txt', "a")
+    f.write( ' { "Stagione" : "' + stagione + '", "Nome" : "' + nome +  '", "Id" : "' + id +  '", "Ruolo" : "' + ruolo + '", "Squadra" : "' + squadra + '", "media_voto" : "' + mv + '", "media_fantavoto" : "' + fmv + '", "Presenza" : "' + presenze + '", "Gol" : "' + gol + '", "Assist" : "' + assist + '", "Src" : "' + img + '" } \n ' )
+    f.close()
+        
+
+
